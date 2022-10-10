@@ -1,0 +1,33 @@
+#search-title {
+  font: normal 400 80px/100px Georgia;
+  text-align: center;
+}
+
+#tabbar-wrapper {
+  margin: 20px auto;
+  padding: 10px;
+  width: 600px;
+  /* background-color: #e6e6e6; */
+}
+.tab-type {
+  margin-left: 10px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #80a492;
+}
+.tabbar {
+  margin: 5px auto 30px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #d5ebe1;
+}
+.tab-item {
+  display: flex;
+  box-sizing: border-box;
+  margin: 6px 10px;
+  padding: 5px 10px;
+  border: 1px solid #99bcac;
+  border-radius: 18px;
+  font-size: 16px;
+  cursor: pointer;
+}

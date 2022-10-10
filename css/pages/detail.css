@@ -1,0 +1,62 @@
+#detail-title {
+  font: normal 400 80px/100px Georgia;
+  text-align: center;
+  /* letter-spacing: 40px; */
+}
+
+#webList {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.web-item {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  border: 1px solid black;
+}
+.web-item-icon {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 200px;
+  height: 200px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.web-item-icon img {
+  height: 160px;
+  width: 160px;
+  border-radius: 80px;
+}
+.web-item-info {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 520px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.web-item-title {
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 24px;
+}
+.web-item-content {
+  height: 130px;
+}
+.web-item-url {
+  height: 30px;
+  text-align: center;
+}
+.web-item-label-wrapper {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 760px;
+  height: 40px;
+}

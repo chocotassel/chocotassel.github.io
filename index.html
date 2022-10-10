@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Library</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <script src="/js/index.js" type="module"></script>
+</head>
+<body>
+  <div id="container">
+    <a id="user" href="/pages/register.html">
+      <div class="user-icon">
+        <img src="/img/user.svg" alt="">
+      </div>
+      <div class="user-name">username</div>
+    </a>
+
+    <div id="index-title">Website Library</div>
+
+    <div id="searchBox">
+      <div class="search-submit">
+        <img class="search-icon" src="/img/icon/search.svg" alt="">
+      </div>
+      <input class="search-input" type="text"></input>
+    </div>
+
+
+    <div id="recommendBox">
+
+      <div id="article-wrapper">
+
+        <div class="article-menu-wrapper">
+          <div class="article-menu-item" id="my">我的</div>
+          <div class="article-menu-item article-menu-item-selected" id="recommend">推荐</div>
+        </div>
+
+        <div id="website-list-wrapper" style="display: none;">
+          <a class="tile" aria-label="百度一下，你就知道" title="百度一下，你就知道" href="https://www.baidu.com/">
+            <cr-icon-button id="actionMenuButton" class="icon-more-vert" tabindex="0" title="更多操作" aria-disabled="false" role="button"></cr-icon-button>
+            <cr-icon-button id="removeButton" class="icon-clear" tabindex="0" hidden="" title="移除" aria-disabled="false" role="button"></cr-icon-button>
+            <div class="tile-icon">
+              <img draggable="false" alt="" src="chrome://favicon2/?size=24&amp;scaleFactor=1x&amp;showFallbackMonogram=&amp;pageUrl=https%3A%2F%2Fwww.baidu.com%2F">
+              <div class="query-tile-icon" draggable="false" hidden=""></div>
+            </div>
+            <div class="tile-title title-ltr"><span>百度一下，你就知道</span></div>
+          </a>
+        </div>
+
+        <div id="article-list-wrapper">
+          <div class="article-item">
+            <div class="article-item-title">title</div>
+            <div class="aiticle-item-user">
+              <img class="article-item-user-icon" src="" alt="">
+              <div class="aiticle-item-user-name">username</div>
+            </div>
+            <div class="article-item-content">content</div>
+            <img class="article-item-img" src="" alt="">
+          </div>
+          <div class="article-item">
+            <div class="article-item-title">title</div>
+            <div class="aiticle-item-user">
+              <img class="article-item-user-icon" src="" alt="">
+              <div class="aiticle-item-user-name">username</div>
+            </div>
+            <div class="article-item-content">content</div>
+            <img class="article-item-img" src="" alt="">
+          </div>
+          <div class="article-item">
+            <div class="article-item-title">title</div>
+            <div class="aiticle-item-user">
+              <img class="article-item-user-icon" src="" alt="">
+              <div class="aiticle-item-user-name">username</div>
+            </div>
+            <div class="article-item-content">content</div>
+            <img class="article-item-img" src="" alt="">
+          </div>
+        </div>
+
+      </div>
+
+      <div id="right-wrapper">
+        <div id="hot-wrapper">
+          <div class="hot-title">热搜 ></div>
+          <div class="hot-title-change">换一批</div>
+          <div class="hot-title-blank"></div>
+          <ul class="hot-rank"></ul>
+        </div>
+
+        <div id="tabbar-wrapper">
+          <div class="tab-item">搜索</div>
+          <div class="tab-item">视频</div>
+          <div class="tab-item">游戏</div>
+          <div class="tab-item">购物</div>
+          <div class="tab-item">体育</div>
+          <div class="tab-item">小说</div>
+          <div class="tab-item">科技</div>
+          <div class="tab-item">社交</div>
+          <div class="tab-item">新闻</div>
+          <div class="tab-item">旅游</div>
+          <div class="tab-item">招聘</div>
+          <div class="tab-item">音乐</div>
+          <div class="tab-item">财经</div>
+          <div class="tab-item">ACGN</div>
+          <a href="/pages/search.html" class="tab-more">查看更多</a>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</body>
+</html>

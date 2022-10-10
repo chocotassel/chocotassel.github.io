@@ -1,0 +1,131 @@
+#index-title {
+  margin-top: 100px;
+  font: normal 400 80px/200px Georgia;
+  text-align: center;
+}
+
+#recommendBox {
+  position: relative;
+  margin: 20px auto;
+  width: 1000px;
+  display: flex;
+}
+
+#article-wrapper {
+  float: left;
+  width: 700px;
+  height: 1000px;
+}
+.article-menu-wrapper {
+  height: 20px;
+}
+.article-menu-item {
+  float: left;
+  margin: 0 12px;
+  height: 24px;
+  font: 14px/24px Arial,sans-serif;
+  color: rgb(94, 94, 94);
+  cursor: pointer;
+}
+.article-menu-item-selected {
+  border-bottom: 2px #80a492 solid;
+  color: black !important;
+}
+.article-item {
+  box-sizing: border-box;
+  padding: 20px;
+  height: 160px;
+  width: 100%;
+}
+.article-item-title {
+  font: normal 700 20px/20px Microsoft YaHei;
+}
+
+.aiticle-item-user {
+  font: normal 400 18px/30px Microsoft YaHei;
+
+}
+.aiticle-item-user-icon {
+  float: left;
+}
+.aiticle-item-user-name {
+  float: left;
+}
+
+
+
+#right-wrapper {
+  position: sticky;
+  top: 50px;
+  right: 0;
+  width: 300px;
+  height: 700px;
+}
+#hot-wrapper {
+  box-sizing: border-box;
+}
+.hot-title {
+  float: left;
+}
+.hot-title-change {
+  position: absolute;
+  left: 180px;
+}
+.hot-title-blank {
+  height: 30px;
+}
+.hot-item {
+  list-style: none;
+}
+.hot-rank {
+  margin-left: 10px;
+}
+.hot-rank a {
+  text-decoration: none;
+  height: 36px;
+  line-height: 36px;
+  color: black;
+}
+.hot-rank .hot-item-content:hover { 
+  text-decoration: underline;
+  color: #80a492;
+}
+.hot-item-index {
+  display: inline-block;
+  width: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hot-item-content {
+  font-size: 16px;
+  height: 16px;
+  line-height: 36px;
+}
+
+#tabbar-wrapper {
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding: 11px;
+  height: 200px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tab-item {
+  box-sizing: border-box;
+  margin: 4px 5px;
+  padding: 8px 12px;
+  height: 36px;
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid rgb(148, 148, 148);
+  border-radius: 10px;
+}
+.tab-more {
+  height: 40px;
+  width: 120px;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  color: #ccc;
+}
