@@ -1,4 +1,5 @@
 import hotDataJson from '/data/hotData.json' assert { type: 'json' };
+import myJson from '/data/my.json' assert { type: 'json' };
 import gouwuJson from '/data/购物.json' assert { type: 'json' };
 
 
@@ -19,12 +20,12 @@ var articleList = document.querySelector("#article-list-wrapper")
 var myList = document.querySelector("#my-list-wrapper")
 
 for(i = 0; i < 3; i++){
-  myList.innerHTML += `<a class="my-item" title="百度一下，你就知道" href="https://www.baidu.com/">
+  myList.innerHTML += `<a class="my-item" title="${myJson[i].title}" href="${myJson.url}">
   <div class="my-delete-icon" style="display: none;"></div>
   <div class="my-icon">
-    <img draggable="false" alt="" src="">
+    <img draggable="false" alt="" src="${myJson[i].url}favicon.ico">
   </div>
-  <div class="my-title"><span>百度一下，你就知道</span></div>
+  <div class="my-title"><span>${myJson[i].title}</span></div>
   </a>`
 }
 for(i = 0; i < 3; i++){

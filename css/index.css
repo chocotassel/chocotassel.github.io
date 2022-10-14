@@ -63,6 +63,12 @@
   justify-content: center;
   border-radius: 50%;
   background-color: rgb(253, 253, 253);
+  overflow: hidden;
+}
+.my-icon img {
+  width: 24px;
+  height: 24px;
+  margin: auto;
 }
 .my-title {
   width: 104px;
