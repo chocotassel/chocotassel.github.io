@@ -6,26 +6,57 @@ var hotItem = document.querySelectorAll(".hot-item")
 var hotRank = document.querySelector(".hot-rank")
 var i;
 for(i = 0; i < hotDataJson.length; i++){
-  // hotItem[i].querySelector("a").href = hotDataJson[i].url
-  // hotItem[i].querySelector(".hot-item-index").innerHTML = hotDataJson[i].id
-  // hotItem[i].querySelector(".hot-item-content").innerHTML = hotDataJson[i].title
-  hotRank.innerHTML += '<li class="hot-item"><a href=' + hotDataJson[i].url + '><span class="hot-item-index">' + hotDataJson[i].id + '</span><span class="hot-item-content">' + hotDataJson[i].title + '</span></a></li>'
+  hotRank.innerHTML += `<li class="hot-item"><a href=${hotDataJson[i].url}><span class="hot-item-index">${hotDataJson[i].id}</span><span class="hot-item-content">${hotDataJson[i].title}</span></a></li>`
   console.log(i)
 }
 
-var my = document.querySelector("#my")
-var recommend = document.querySelector("#recommend")
+
+var my = document.querySelector("#my-title")
+var recommend = document.querySelector("#recommend-title")
 var articleList = document.querySelector("#article-list-wrapper")
-var websiteList = document.querySelector("#website-list-wrapper")
+var myList = document.querySelector("#my-list-wrapper")
+
+for(i = 0; i < 3; i++){
+  myList.innerHTML += `<a class="my-item" title="百度一下，你就知道" href="https://www.baidu.com/">
+  <div class="my-delete-icon" style="display: none;"></div>
+  <div class="my-icon">
+    <img draggable="false" alt="" src="">
+  </div>
+  <div class="my-title"><span>百度一下，你就知道</span></div>
+  </a>`
+}
+for(i = 0; i < 3; i++){
+  articleList.innerHTML += `<div class="article-item">
+    <div class="article-item-title">title</div>
+    <div class="aiticle-item-user">
+      <img class="article-item-user-icon" src="" alt="">
+      <div class="aiticle-item-user-name">username</div>
+    </div>
+    <div class="article-item-content">content</div>
+    <img class="article-item-img" src="" alt="">
+  </div>`
+}
+
+
+
 my.addEventListener("click", ()=> {
   articleList.style.display = "none";
-  websiteList.style.display = "block";
-  my.classList.add("article-menu-item-selected");
-  recommend.classList.remove("article-menu-item-selected");
+  myList.style.display = "block";
+  my.classList.add("recommend-menu-item-selected");
+  recommend.classList.remove("recommend-menu-item-selected");
 })
 recommend.addEventListener("click", ()=> {
-  websiteList.style.display = "none";
+  myList.style.display = "none";
   articleList.style.display = "block";
-  my.classList.remove("article-menu-item-selected");
-  recommend.classList.add("article-menu-item-selected");
+  my.classList.remove("recommend-menu-item-selected");
+  recommend.classList.add("recommend-menu-item-selected");
 })
+
+
+
+var tabbarList = ["搜索","视频","游戏","购物","体育","小说","科技","社交","新闻","旅游","招聘","音乐","财经","ACGN"]
+var tabbar = document.querySelector("#tabbar-wrapper")
+for(i = 0; i < tabbarList.length; i++) {
+  tabbar.innerHTML += `<a href="/pages/detail.html"><div class="tab-item">${tabbarList[i]}</div></a>`
+}
+tabbar.innerHTML += '<a href="/pages/search.html" class="tab-more">查看更多</a>'
