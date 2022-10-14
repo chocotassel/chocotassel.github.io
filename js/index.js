@@ -1,7 +1,8 @@
 import hotDataJson from '/data/hotData.json' assert { type: 'json' };
+import gouwuJson from '/data/购物.json' assert { type: 'json' };
 
-console.log(hotDataJson[0]);
 
+// index hotRank
 var hotItem = document.querySelectorAll(".hot-item")
 var hotRank = document.querySelector(".hot-rank")
 var i;
@@ -11,6 +12,7 @@ for(i = 0; i < hotDataJson.length; i++){
 }
 
 
+// index recommend
 var my = document.querySelector("#my-title")
 var recommend = document.querySelector("#recommend-title")
 var articleList = document.querySelector("#article-list-wrapper")
@@ -27,12 +29,12 @@ for(i = 0; i < 3; i++){
 }
 for(i = 0; i < 3; i++){
   articleList.innerHTML += `<div class="article-item">
-    <div class="article-item-title">title</div>
+    <div class="article-item-title">${gouwuJson[i].title}</div>
     <div class="aiticle-item-user">
       <img class="article-item-user-icon" src="" alt="">
-      <div class="aiticle-item-user-name">username</div>
+      <div class="aiticle-item-user-name">${gouwuJson[i].url}</div>
     </div>
-    <div class="article-item-content">content</div>
+    <div class="article-item-content">${gouwuJson[i].description}</div>
     <img class="article-item-img" src="" alt="">
   </div>`
 }
