@@ -2,6 +2,15 @@ import hotDataJson from '/data/hotData.json' assert { type: 'json' };
 import myJson from '/data/my.json' assert { type: 'json' };
 import gouwuJson from '/data/购物.json' assert { type: 'json' };
 
+//index login
+var user = document.querySelector("#user")
+var mask = document.querySelector(".mask")
+user.addEventListener("click", () => { 
+  mask.style.display = "block";
+})
+mask.addEventListener("click", () => {
+  mask.style.display = "none";
+})
 
 // index hotRank
 var hotItem = document.querySelectorAll(".hot-item")
@@ -20,23 +29,24 @@ var articleList = document.querySelector("#article-list-wrapper")
 var myList = document.querySelector("#my-list-wrapper")
 
 for(i = 0; i < 3; i++){
-  myList.innerHTML += `<a class="my-item" title="${myJson[i].title}" href="${myJson.url}">
+  myList.innerHTML += `<a class="my-item" title="${myJson[i].title}" href="${myJson[i].url}">
   <div class="my-delete-icon" style="display: none;"></div>
   <div class="my-icon">
-    <img draggable="false" alt="" src="${myJson[i].url}favicon.ico">
+    <img draggable="false" alt="" src="${myJson[i].url}/favicon.ico">
   </div>
   <div class="my-title"><span>${myJson[i].title}</span></div>
   </a>`
 }
 for(i = 0; i < 3; i++){
   articleList.innerHTML += `<div class="article-item">
-    <div class="article-item-title">${gouwuJson[i].title}</div>
-    <div class="aiticle-item-user">
-      <img class="article-item-user-icon" src="" alt="">
-      <div class="aiticle-item-user-name">${gouwuJson[i].url}</div>
+    <a href="${gouwuJson[i].url}" class="article-item-title">${gouwuJson[i].title}</a>
+    <div class="article-item-content">
+      <img class="article-item-icon" src="${gouwuJson[i].url}/favicon.ico" alt="">
+      <div class="">
+        <div class="article-item-description">${gouwuJson[i].description}</div>
+        <div class="aiticle-item-url">${gouwuJson[i].url}</div>
+      </div>
     </div>
-    <div class="article-item-content">${gouwuJson[i].description}</div>
-    <img class="article-item-img" src="" alt="">
   </div>`
 }
 

@@ -4,8 +4,18 @@
   text-align: center;
 }
 
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
 /* 推荐栏 */
-#recommendBox {
+#indexBox {
   position: relative;
   margin: 20px auto;
   width: 1000px;
@@ -14,14 +24,15 @@
 
 #recommend-wrapper {
   float: left;
-  width: 700px;
+  margin-right: 50px;
+  width: 650px;
   height: 1000px;
   display: flex;
   flex-direction: column;
 }
 .recommend-menu-wrapper {
   height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .recommend-menu-item {
   float: left;
@@ -87,25 +98,42 @@
 
 
 /* 推荐 */
+.article-list-wrapper {
+  display: flex;
+}
 .article-item {
   box-sizing: border-box;
-  padding: 20px;
-  height: 160px;
+  margin-bottom: 20px;
+  /* height: 160px; */
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .article-item-title {
   font: normal 700 20px/20px Microsoft YaHei;
+  text-decoration: underline;
+  cursor: pointer;
 }
-
-.aiticle-item-user {
-  font: normal 400 18px/30px Microsoft YaHei;
-
+.article-item-content {
+  display: flex;
+  margin-top: 10px;
+  height: 88px;
 }
-.aiticle-item-user-icon {
-  float: left;
+.article-item-icon {
+  width: 86px;
+  height: 86px;
+  margin-right: 16px;
+  border-radius: 12px;
+  cursor: pointer;
 }
-.aiticle-item-user-name {
-  float: left;
+.article-item-description {
+  height: 60px;
+  font: normal 400 15px/18px Arial;
+  overflow: hidden;
+}
+.article-item-url {
+  height: 28px;
+  font: normal 400 15px/15px Arial;
 }
 
 
