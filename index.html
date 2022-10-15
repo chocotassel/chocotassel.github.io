@@ -14,6 +14,27 @@
 </head>
 <body>
   <div id="container">
+
+    <div id="my-add-container" class="hidden">
+      <div class="mask"></div>
+      <div class="my-add-wrapper">
+        <div class="my-add-title">添加网站</div>
+        <form class="my-add-form" name="addForm">
+          <div>
+            <div>名称</div>
+            <div class="my-add-form-input-bg"><input type="text" name="name"></div>
+          </div>
+          <div>
+            <div>网址</div>
+            <div class="my-add-form-input-bg"><input type="text" name="website"></div>
+          </div>
+        </form>
+        <div class="my-add-button">
+          <button>取消</button>
+          <button>完成</button>
+        </div>
+      </div>
+    </div>
     
     <a id="user" href="/pages/login.html">
       <div class="user-icon">
@@ -40,7 +61,16 @@
           <div class="recommend-menu-item recommend-menu-item-selected" id="recommend-title">推荐</div>
         </div>
         <div id="article-list-wrapper"></div>
-        <div id="my-list-wrapper" style="display: none;"></div>
+        <div id="my-list-wrapper" style="display: none;">
+          <div id="my-list"></div>
+          <a class="my-item" id="my-add" href="#">
+            <div class="my-delete-icon" style="display: none;"></div>
+            <div class="my-icon">
+              <img draggable="false" alt="" src="/img/icon/add.svg">
+            </div>
+            <div class="my-title"><span>添加网站</span></div>
+          </a>
+        </div>
       </div>
 
       <div id="right-wrapper">

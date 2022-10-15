@@ -10,7 +10,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 10;
+  z-index: -1;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -53,6 +53,11 @@
   flex-wrap: wrap;
   align-content: flex-start;
 }
+.my-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
 .my-item {
   display: inline-flex;
   width: 112px;
@@ -82,9 +87,10 @@
   margin: auto;
 }
 .my-title {
-  width: 104px;
+  width: 100px;
   padding: 2px 8px;
   align-items: center;
+  box-sizing: border-box;
 }
 .my-title span{
   display: inline-block;
@@ -96,6 +102,68 @@
   text-overflow:ellipsis;
 }
 
+#my-add-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.my-add-wrapper {
+  margin: 30vh auto ;
+  padding: 20px 30px;
+  width: 500px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.my-add-title {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.my-add-form > div {
+  margin-bottom: 20px;
+}
+.my-add-form > div > div:nth-child(1) {
+  color: rgb(150, 150, 150);
+  font-size: 16px;
+  line-height: 30px;
+}
+.my-add-form-input-bg {
+  background-color: rgb(240, 240, 240);
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.my-add-form input {
+  width: 100%;
+  margin: 0 5px;
+  border: none;
+  font-size: 14px;
+  background-color: #fff0;
+}
+.my-add-form input:focus {
+  outline: none;
+}
+.my-add-button {
+  display: flex;
+  justify-content: end;
+}
+.my-add-button button {
+  margin-left: 10px;
+  height: 34px;
+  width: 64px;
+  border-radius: 5px;
+  border: 1px solid #b1d5c8;
+  background-color: #fff;
+  cursor: pointer;
+}
+.my-add-button button:hover {
+  background-color: #80a492;
+  color: #f6f6f6;
+}
 
 /* 推荐 */
 .article-list-wrapper {

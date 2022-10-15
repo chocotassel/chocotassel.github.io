@@ -3,32 +3,83 @@ import myJson from '/data/my.json' assert { type: 'json' };
 import gouwuJson from '/data/购物.json' assert { type: 'json' };
 
 
-// index hotRank
-var hotItem = document.querySelectorAll(".hot-item")
-var hotRank = document.querySelector(".hot-rank")
-var i;
-for(i = 0; i < hotDataJson.length; i++){
-  hotRank.innerHTML += `<li class="hot-item"><a href=${hotDataJson[i].url}><span class="hot-item-index">${hotDataJson[i].id}</span><span class="hot-item-content">${hotDataJson[i].title}</span></a></li>`
-  console.log(i)
-}
-
-
 // index recommend
 var my = document.querySelector("#my-title")
 var recommend = document.querySelector("#recommend-title")
 var articleList = document.querySelector("#article-list-wrapper")
-var myList = document.querySelector("#my-list-wrapper")
+var myListWrapper = document.querySelector("#my-list-wrapper")
+var myList = document.querySelector("#my-list")
+console.log(myList);
 
-for(i = 0; i < 3; i++){
-  myList.innerHTML += `<a class="my-item" title="${myJson[i].title}" href="${myJson[i].url}">
-  <div class="my-delete-icon" style="display: none;"></div>
-  <div class="my-icon">
-    <img draggable="false" alt="" src="${myJson[i].url}/favicon.ico">
-  </div>
-  <div class="my-title"><span>${myJson[i].title}</span></div>
-  </a>`
+
+// menu
+my.addEventListener("click", ()=> {
+  articleList.style.display = "none";
+  myListWrapper.style.display = "block";
+  my.classList.add("recommend-menu-item-selected");
+  recommend.classList.remove("recommend-menu-item-selected");
+})
+recommend.addEventListener("click", ()=> {
+  myListWrapper.style.display = "none";
+  articleList.style.display = "block";
+  my.classList.remove("recommend-menu-item-selected");
+  recommend.classList.add("recommend-menu-item-selected");
+})
+
+
+// my
+function renderMyList(myJson) {
+  myList.innerHTML = ""
+  for(i = 0; i < myJson.length; i++){
+    myList.innerHTML += 
+    `<a class="my-item" title="${myJson[i].title}" href="${myJson[i].url}">
+      <div class="my-delete-icon" style="display: none;"></div>
+      <div class="my-icon">
+        <img draggable="false" alt="" src="${myJson[i].url}/favicon.ico">
+      </div>
+      <div class="my-title"><span>${myJson[i].title}</span></div>
+    </a>`
+  }
 }
-for(i = 0; i < 3; i++){
+renderMyList(myJson);
+
+// my add
+
+var myAdd = document.querySelector("#my-add");
+var myAddContainer = document.querySelector("#my-add-container");
+var myAddCancel = document.querySelector(".my-add-button").children[0];
+var myAddFinish = document.querySelector(".my-add-button").children[1];
+var addForm = document.addForm;
+
+
+myAdd.addEventListener("click", () => {
+  myAddContainer.classList.remove("hidden")
+  console.log(2);
+})
+
+myAddCancel.addEventListener("click", () => {
+  myAddContainer.classList.add("hidden")
+})
+
+myAddFinish.addEventListener("click", () => {
+  var name = addForm["name"].value;
+  var website = addForm["website"].value;
+  if(name != "" && website != "") {
+    myJson.push({
+      "id": myJson.length + 1,
+      "title": name,
+      "url": website
+    })
+    renderMyList(myJson);
+    myAddContainer.classList.add("hidden");
+  }
+})
+
+
+
+
+// article
+for(i = 0; i < gouwuJson.length; i++){
   articleList.innerHTML += `<div class="article-item">
     <a href="${gouwuJson[i].url}" class="article-item-title">${gouwuJson[i].title}</a>
     <div class="article-item-content">
@@ -43,19 +94,15 @@ for(i = 0; i < 3; i++){
 
 
 
-my.addEventListener("click", ()=> {
-  articleList.style.display = "none";
-  myList.style.display = "block";
-  my.classList.add("recommend-menu-item-selected");
-  recommend.classList.remove("recommend-menu-item-selected");
-})
-recommend.addEventListener("click", ()=> {
-  myList.style.display = "none";
-  articleList.style.display = "block";
-  my.classList.remove("recommend-menu-item-selected");
-  recommend.classList.add("recommend-menu-item-selected");
-})
 
+
+// index hotRank
+var hotItem = document.querySelectorAll(".hot-item")
+var hotRank = document.querySelector(".hot-rank")
+var i;
+for(i = 0; i < hotDataJson.length; i++){
+  hotRank.innerHTML += `<li class="hot-item"><a href=${hotDataJson[i].url}><span class="hot-item-index">${hotDataJson[i].id}</span><span class="hot-item-content">${hotDataJson[i].title}</span></a></li>`
+}
 
 
 var tabbarList = ["搜索","视频","游戏","购物","体育","小说","科技","社交","新闻","旅游","招聘","音乐","财经","ACGN"]
