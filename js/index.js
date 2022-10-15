@@ -2,15 +2,6 @@ import hotDataJson from '/data/hotData.json' assert { type: 'json' };
 import myJson from '/data/my.json' assert { type: 'json' };
 import gouwuJson from '/data/购物.json' assert { type: 'json' };
 
-//index login
-var user = document.querySelector("#user")
-var mask = document.querySelector(".mask")
-user.addEventListener("click", () => { 
-  mask.style.display = "block";
-})
-mask.addEventListener("click", () => {
-  mask.style.display = "none";
-})
 
 // index hotRank
 var hotItem = document.querySelectorAll(".hot-item")
