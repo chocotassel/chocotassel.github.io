@@ -13,6 +13,7 @@
   </script>
 </head>
 <body>
+  <!-- <span class="iconfont">&#xe67d;</span> -->
   <div id="container">
 
     <div id="my-add-container" class="hidden">
@@ -57,11 +58,11 @@
 
       <div id="recommend-wrapper">
         <div class="recommend-menu-wrapper">
-          <div class="recommend-menu-item" id="my-title">我的</div>
-          <div class="recommend-menu-item recommend-menu-item-selected" id="recommend-title">推荐</div>
+          <div class="recommend-menu-item recommend-menu-item-selected" id="my-title">我的</div>
+          <div class="recommend-menu-item" id="recommend-title">推荐</div>
         </div>
-        <div id="article-list-wrapper"></div>
-        <div id="my-list-wrapper" style="display: none;">
+        <div id="web-list-wrapper" style="display: none;"></div>
+        <div id="my-list-wrapper">
           <div id="my-list"></div>
           <a class="my-item" id="my-add" href="#">
             <div class="my-delete-icon" style="display: none;"></div>
@@ -76,7 +77,7 @@
       <div id="right-wrapper">
         <div id="hot-wrapper">
           <div class="hot-title">热搜 ></div>
-          <div class="hot-title-change">换一批</div>
+          <a class="hot-title-change">换一批</a>
           <div class="hot-title-blank"></div>
           <ul class="hot-rank"></ul>
         </div>

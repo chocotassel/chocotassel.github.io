@@ -2,6 +2,7 @@
   margin-top: 100px;
   font: normal 400 80px/200px Georgia;
   text-align: center;
+  user-select: none;
 }
 
 .mask {
@@ -165,43 +166,6 @@
   color: #f6f6f6;
 }
 
-/* 推荐 */
-.article-list-wrapper {
-  display: flex;
-}
-.article-item {
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.article-item-title {
-  font: normal 700 20px/20px Microsoft YaHei;
-  text-decoration: underline;
-  cursor: pointer;
-}
-.article-item-content {
-  display: flex;
-  margin-top: 10px;
-  height: 88px;
-}
-.article-item-icon {
-  width: 86px;
-  height: 86px;
-  margin-right: 16px;
-  border-radius: 12px;
-  cursor: pointer;
-}
-.article-item-description {
-  height: 60px;
-  font: normal 400 15px/18px Arial;
-  overflow: hidden;
-}
-.article-item-url {
-  height: 28px;
-  font: normal 400 15px/15px Arial;
-}
 
 
 
@@ -223,6 +187,7 @@
 .hot-title-change {
   position: absolute;
   left: 180px;
+  cursor: pointer;
 }
 .hot-title-blank {
   height: 30px;

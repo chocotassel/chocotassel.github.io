@@ -8,11 +8,8 @@
   <link rel="stylesheet" href="/css/common.css">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/pages/search.css">
-  <script>
-    document.querySelector(".tab-item").addEventListener("click", ()=>{
-      window.location.url
-    })
-  </script>
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <script src="/js/search.js" type="module"></script>
 </head>
 <body>
 
@@ -26,8 +23,8 @@
   </div>
 
   <div id="tabbar-wrapper">
-    <div class="tab-type">门户资讯</div>
     <div class="tabbar">
+      <div class="tab-type">门户资讯</div>
       <div class="tab-item">新闻</div>
       <div class="tab-item">财经</div>
       <div class="tab-item">搜索</div>
@@ -35,8 +32,8 @@
       <div class="tab-item">招聘</div> 
       <div class="tab-item">银行</div> 
     </div>
-    <div class="tab-type">生活娱乐</div>
     <div class="tabbar">
+    <div class="tab-type">生活娱乐</div>
       <div class="tab-item">购物</div>
       <div class="tab-item">视频</div>
       <div class="tab-item">小说</div>
@@ -46,14 +43,14 @@
       <div class="tab-item">音乐</div>
       <div class="tab-item">旅游</div>
     </div>
-    <div class="tab-type">社区交流</div>
     <div class="tabbar">
+    <div class="tab-type">社区交流</div>
       <div class="tab-item">博客</div>
       <div class="tab-item">论坛</div>
       <div class="tab-item">社交</div>
     </div>
-    <div class="tab-type">知识教育</div>
     <div class="tabbar">
+    <div class="tab-type">知识教育</div>
       <div class="tab-item">编程</div>
       <div class="tab-item">翻译</div> 
       <div class="tab-item">文学</div>
@@ -61,7 +58,38 @@
     </div>
   </div>
 
+  <div class="select-bar">
+    <div class="select-item">
+      <div class="select-item-text">综合排序</div>
+    </div>
+    <div class="select-item">
+      <div class="select-item-text">点击</div>
+      <ul class="select-item-droplist hidden">
+        <li>降序</li>
+        <li>升序</li>
+      </ul>
+    </div>
+    <div class="select-item">
+      <div class="select-item-text">收藏</div>
+      <ul class="select-item-droplist hidden">
+        <li>降序</li>
+        <li>升序</li>
+      </ul>
+    </div>
+  </div>
 
+  <div id="web-list-wrapper">
+  </div>
 
 </body>
+
+<script>
+  $.ajax({
+    type:"GET",
+    url:"https://www.taobao.com/",
+    success: function(result) {
+      console.log(result);
+    }
+  })
+</script>
 </html>

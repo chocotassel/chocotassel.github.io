@@ -3,6 +3,17 @@ body {
   width: 100%;
 }
 
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.ttf?t=1666744639617') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 #searchBox {
   position: relative;
@@ -81,4 +92,47 @@ a:hover {
 
 .hidden {
   display: none;
+}
+
+
+/* 网址列表 */
+#web-list-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.web-item {
+  z-index: 1;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.web-item-title {
+  font: normal 400 20px/20px Microsoft YaHei;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.web-item-content {
+  display: flex;
+  margin-top: 10px;
+  height: 88px;
+}
+.web-item-icon {
+  width: 86px;
+  height: 86px;
+  margin-right: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.web-item-description {
+  height: 60px;
+  font: normal 400 15px/20px Arial;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+.web-item-url {
+  height: 28px;
+  font: normal 400 15px/15px Arial;
 }

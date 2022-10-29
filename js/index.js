@@ -6,7 +6,7 @@ import gouwuJson from '/data/购物.json' assert { type: 'json' };
 // index recommend
 var my = document.querySelector("#my-title")
 var recommend = document.querySelector("#recommend-title")
-var articleList = document.querySelector("#article-list-wrapper")
+var webList = document.querySelector("#web-list-wrapper")
 var myListWrapper = document.querySelector("#my-list-wrapper")
 var myList = document.querySelector("#my-list")
 console.log(myList);
@@ -14,14 +14,14 @@ console.log(myList);
 
 // menu
 my.addEventListener("click", ()=> {
-  articleList.style.display = "none";
+  webList.style.display = "none";
   myListWrapper.style.display = "block";
   my.classList.add("recommend-menu-item-selected");
   recommend.classList.remove("recommend-menu-item-selected");
 })
 recommend.addEventListener("click", ()=> {
   myListWrapper.style.display = "none";
-  articleList.style.display = "block";
+  webList.style.display = "block";
   my.classList.remove("recommend-menu-item-selected");
   recommend.classList.add("recommend-menu-item-selected");
 })
@@ -72,20 +72,22 @@ myAddFinish.addEventListener("click", () => {
     })
     renderMyList(myJson);
     myAddContainer.classList.add("hidden");
+  }else{
+    alert("请输入网址！")
   }
 })
 
 
 
 
-// article
+// web
 for(i = 0; i < gouwuJson.length; i++){
-  articleList.innerHTML += `<div class="article-item">
-    <a href="${gouwuJson[i].url}" class="article-item-title">${gouwuJson[i].title}</a>
-    <div class="article-item-content">
-      <img class="article-item-icon" src="${gouwuJson[i].url}/favicon.ico" alt="">
+  webList.innerHTML += `<div class="web-item">
+    <a href="${gouwuJson[i].url}" class="web-item-title">${gouwuJson[i].title}</a>
+    <div class="web-item-content">
+      <img class="web-item-icon" src="${gouwuJson[i].url}/favicon.ico" alt="">
       <div class="">
-        <div class="article-item-description">${gouwuJson[i].description}</div>
+        <div class="web-item-description">${gouwuJson[i].description}</div>
         <div class="aiticle-item-url">${gouwuJson[i].url}</div>
       </div>
     </div>
@@ -100,7 +102,7 @@ for(i = 0; i < gouwuJson.length; i++){
 var hotItem = document.querySelectorAll(".hot-item")
 var hotRank = document.querySelector(".hot-rank")
 var i;
-for(i = 0; i < hotDataJson.length; i++){
+for(i = 0; i < 8; i++){
   hotRank.innerHTML += `<li class="hot-item"><a href=${hotDataJson[i].url}><span class="hot-item-index">${hotDataJson[i].id}</span><span class="hot-item-content">${hotDataJson[i].title}</span></a></li>`
 }
 
