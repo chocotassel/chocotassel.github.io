@@ -15,6 +15,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+/* 搜索框 */
 #searchBox {
   position: relative;
   margin: 0 auto;
@@ -37,7 +39,7 @@ body {
 }
 .search-input {
   display: inline-block;
-  width: 540px;
+  width: 80%;
   height: 100%;
   outline: none;
   border: none;
@@ -101,16 +103,18 @@ a:hover {
   flex-direction: column;
 }
 .web-item {
+  position: relative;
   z-index: 1;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 .web-item-title {
+  user-select: none;
   font: normal 400 20px/20px Microsoft YaHei;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   cursor: pointer;
 }
 .web-item-content {
@@ -119,6 +123,7 @@ a:hover {
   height: 88px;
 }
 .web-item-icon {
+  user-select: none;
   width: 86px;
   height: 86px;
   margin-right: 16px;
@@ -135,4 +140,32 @@ a:hover {
 .web-item-url {
   height: 28px;
   font: normal 400 15px/15px Arial;
+}
+.web-item-collect {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  right: 20px;
+  bottom: 0px;
+  z-index: 2;
+  box-shadow: 3px 3px 10px #4a6d5b;
+
+}
+.web-item-collect svg {
+  cursor: pointer;
+  margin: 4px;
+  width: 40px;
+  height: 40px;
+}
+.web-item-collect svg:hover {
+  color: #80a492;
+}
+
+
+/* media */
+@media screen and (max-width: 900px) {
+  #searchBox {
+    width: 80vw;
+  }
 }

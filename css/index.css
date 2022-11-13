@@ -25,9 +25,9 @@
 
 #recommend-wrapper {
   float: left;
-  margin-right: 50px;
-  width: 650px;
-  height: 1000px;
+  margin-right: 100px;
+  width: 600px;
+  /* height: 1000px; */
   display: flex;
   flex-direction: column;
 }
@@ -42,6 +42,7 @@
   font: 14px/24px Arial,sans-serif;
   color: rgb(94, 94, 94);
   cursor: pointer;
+  user-select: none;
 }
 .recommend-menu-item-selected {
   border-bottom: 2px #80a492 solid;
@@ -49,11 +50,6 @@
 }
 
 /* 我的 */
-#my-list-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
 .my-list {
   display: flex;
   flex-wrap: wrap;
@@ -67,6 +63,7 @@
   justify-content: space-around;
   align-items: center;
   border-radius: 8px;
+  /* flex: 1; */
 }
 .my-item:hover {
   background-color: rgb(232, 232, 233);
@@ -249,5 +246,35 @@
 }
 
 
+
+/* media */
+@media screen and (max-width: 900px) {
+  #right-wrapper {
+    display: none;
+  }
+  #index-title {
+    margin-top: 50px;
+    font: normal 400 30px/60px Georgia;
+  }
+  #indexBox {
+    width: 90vw;
+  }
+  #recommend-wrapper {
+    margin-right: 0;
+  }
+  .my-add-wrapper {
+    width: 80vw;
+  }
+  #my-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: flex-start;
+  }
+  .my-item {
+    flex: 0 0 33.3%;
+    height: 30vw;
+  }
+}
 
 
