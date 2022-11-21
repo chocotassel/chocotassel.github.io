@@ -20,7 +20,7 @@ for(var i = 1; i < selectItems.length; i++){
 
 // 网址列表渲染
 import {renderWebList} from './renderWebList.js'
-import gouwuJson from '/data/购物.json' assert { type: 'json' };
+import gouwuJson from '/public/data/购物.json' assert { type: 'json' };
 var webList = document.querySelector("#web-list-wrapper")
 renderWebList(gouwuJson, webList)
 

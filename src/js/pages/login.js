@@ -21,6 +21,6 @@ login.addEventListener('click', () => {
 let imgs = document.querySelectorAll("img")
 for(var img of imgs){
   img.onerror = () => {
-    this.src = "../img/error.png";
+    this.src = "/public/img/error.png";
   }
 }

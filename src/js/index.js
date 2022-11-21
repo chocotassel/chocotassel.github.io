@@ -27,7 +27,7 @@ recommend.addEventListener("click", ()=> {
 
 //import
 var myJson;
-fetch('../data/hotData.json')
+fetch('/public/data/hotData.json')
   .then((response) => {
     return response.json();
   }).then((json) => {
@@ -37,7 +37,7 @@ fetch('../data/hotData.json')
     console.log(e);
   });
 
-fetch('../data/购物.json')
+fetch('/public/data/购物.json')
   .then((response) => {
     return response.json();
   }).then((json) => {
@@ -47,7 +47,7 @@ fetch('../data/购物.json')
     console.log(e);
   });
 
-fetch('../data/my.json')
+fetch('/public/data/my.json')
   .then((response) => {
     return response.json();
   }).then((json) => {
@@ -128,7 +128,7 @@ function renderHotRank(json) {
   var tabbarList = ["搜索","视频","游戏","购物","体育","小说","科技","社交","新闻","旅游","招聘","音乐","财经","ACGN"]
   var tabbar = document.querySelector("#tabbar-wrapper")
   for(i = 0; i < tabbarList.length; i++) {
-    tabbar.innerHTML += `<a href="/pages/search.html?type=1"><div class="tab-item">${tabbarList[i]}</div></a>`
+    tabbar.innerHTML += `<a href="/src/pages/search.html?type=1"><div class="tab-item">${tabbarList[i]}</div></a>`
   }
   // var tabItems = document.querySelectorAll(".tab-item")
   // for(var item of tabItems) {
@@ -140,7 +140,7 @@ function renderHotRank(json) {
   //     })
   //   })
   // }
-  tabbar.innerHTML += '<a href="/pages/search.html" class="tab-more">查看更多</a>'
+  tabbar.innerHTML += '<a href="/src/pages/search.html" class="tab-more">查看更多</a>'
   
 }
 
