@@ -1,0 +1,23 @@
+[
+  {"title": "新闻", "type": 1, "num": 1},
+  {"title": "财经", "type": 1, "num": 2},
+  {"title": "搜索", "type": 1, "num": 3},
+  {"title": "政府", "type": 1, "num": 4},
+  {"title": "招聘", "type": 1, "num": 5},
+  {"title": "银行", "type": 1, "num": 6},
+  {"title": "购物", "type": 2, "num": 1},
+  {"title": "视频", "type": 2, "num": 2},
+  {"title": "小说", "type": 2, "num": 3},
+  {"title": "ACG",  "type": 2, "num": 4},
+  {"title": "漫画", "type": 2, "num": 5},
+  {"title": "体育", "type": 2, "num": 6},
+  {"title": "音乐", "type": 2, "num": 7},
+  {"title": "旅游", "type": 2, "num": 8},
+  {"title": "博客", "type": 3, "num": 1},
+  {"title": "论坛", "type": 3, "num": 2},
+  {"title": "社交", "type": 3, "num": 3},
+  {"title": "编程", "type": 3, "num": 4},
+  {"title": "翻译", "type": 4, "num": 5},
+  {"title": "文学", "type": 4, "num": 6},
+  {"title": "历史", "type": 4, "num": 7}
+]

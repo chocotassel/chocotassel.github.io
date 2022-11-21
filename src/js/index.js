@@ -1,4 +1,4 @@
-import $ from "jquery"
+// import $ from "jquery"
 
 // index recommend
 var my = document.querySelector("#my-title")
@@ -31,7 +31,12 @@ fetch('/public/data/hotData.json')
   .then((response) => {
     return response.json();
   }).then((json) => {
-    renderHotRank(json);
+    fetch('/public/data/tabbarList.json')
+    .then((res) => {
+      return res.json()
+    }).then((list) => {
+      renderHotRank(json, list);
+    })
   }).catch(e => {
     console.log("error!");
     console.log(e);
@@ -76,7 +81,7 @@ function renderMyList(json) {
   myList.innerHTML += 
   `<a class="my-item" id="my-add" href="#">
     <div class="my-icon">
-      <img draggable="false" alt="" src="/img/icon/add.svg">
+      <img draggable="false" alt="" src="/public/img/icon/add.svg">
     </div>
     <div class="my-title"><span>添加网站</span></div>
   </a>`
@@ -117,18 +122,24 @@ function renderWebList(json) {
 }
 
 // index hotRank
-function renderHotRank(json) {
+function renderHotRank(json, tabbarList) {
   var hotRank = document.querySelector(".hot-rank")
   var i;
   for(i = 0; i < 8; i++){
     hotRank.innerHTML += `<li class="hot-item"><a href=${json[i].url}><span class="hot-item-index">${json[i].id}</span><span class="hot-item-content">${json[i].title}</span></a></li>`
   }
-
-
-  var tabbarList = ["搜索","视频","游戏","购物","体育","小说","科技","社交","新闻","旅游","招聘","音乐","财经","ACGN"]
+  
   var tabbar = document.querySelector("#tabbar-wrapper")
-  for(i = 0; i < tabbarList.length; i++) {
-    tabbar.innerHTML += `<a href="/src/pages/search.html?type=1"><div class="tab-item">${tabbarList[i]}</div></a>`
+
+  var arr = new Array()
+  for(var i = 0; i < 14; i++){
+    var index = Math.floor(Math.random()*tabbarList.length)
+    arr.push({"title": tabbarList[index].title,"type": tabbarList[index].type, "num": tabbarList[index].num})
+    tabbarList.splice(index, 1)
+  }
+
+  for(i = 0; i < arr.length; i++) {
+    tabbar.innerHTML += `<a href="/src/pages/search.html?type=${arr[i].type}&num=${arr[i].num}"><div class="tab-item">${arr[i].title}</div></a>`
   }
   // var tabItems = document.querySelectorAll(".tab-item")
   // for(var item of tabItems) {

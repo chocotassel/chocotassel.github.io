@@ -32,6 +32,10 @@
   font-size: 16px;
   cursor: pointer;
 }
+.tab-item-selected {
+  background-color: #d5ebe1;
+}
+
 
 .select-bar {
   margin: 0 auto 20px;

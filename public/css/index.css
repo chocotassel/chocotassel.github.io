@@ -27,7 +27,6 @@
   float: left;
   margin-right: 100px;
   width: 600px;
-  /* height: 1000px; */
   display: flex;
   flex-direction: column;
 }

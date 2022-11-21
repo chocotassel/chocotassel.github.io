@@ -99,7 +99,7 @@ a:hover {
 /* 网址列表 */
 #web-list-wrapper {
   margin: 0 auto;
-  width: 800px;
+  width: 600px;
   display: flex;
   flex-direction: column;
 }
@@ -173,4 +173,12 @@ a:hover {
     left: 0;
     margin-left: 6px;
   }
+  #web-list-wrapper {
+    width: 80vw;
+  }
 }
+/* @media screen and (min-width: 900px) {
+  #web-list-wrapper {
+    width: 80vw;
+  }
+} */
