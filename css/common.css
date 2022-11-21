@@ -53,7 +53,6 @@ body {
   margin: 6px 20px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   cursor: pointer;
 }
@@ -167,5 +166,9 @@ a:hover {
 @media screen and (max-width: 900px) {
   #searchBox {
     width: 80vw;
+  }
+  #user {
+    left: 0;
+    margin-left: 6px;
   }
 }

@@ -15,6 +15,11 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(20px);
 }
+.container-a {
+  position: absolute;
+  width: 700px;
+  height: 400px;
+}
 
 .form-box {
   position: absolute;
@@ -132,15 +137,32 @@ input:focus::placeholder {
   opacity: 0.9;
   margin: 40px 0;
 }
-.con-box span {
+.bottom-box span {
   font-size: 12px;
   letter-spacing: 2px;
-  color: #8e9aaf;
+  color: #f6f6f6;
   text-align: center;
 }
-.con-box a {
+.bottom-box a {
   font-size: 12px;
   letter-spacing: 2px;
-  color: #80a492;
+  color: #f6f6f6;
   text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+  .container {
+    display: none;
+  }
+  .container-a {
+    width: 100vw;
+  }
+  .form-box {
+    left: 10vw;
+    width: 80vw;
+    height: 500px;
+  }
 }

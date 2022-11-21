@@ -57,20 +57,22 @@ fetch('../data/my.json')
   });
 // my
 function renderMyList(json) {
+  //挂载收藏的网页图标
   myList.innerHTML = ""
   for(var i = 0; i < json.length; i++){
     myList.innerHTML += 
-    `<a class="my-item" title="${json[i].title}" href="${json[i].url}">
-      <div class="my-delete-icon" style="display: none;"></div>
+    `<div class="my-item" title="${json[i].title}">
+      <a href="${json[i].url}"></a>
+      <div class="my-delete-icon hidden">X</div>
       <div class="my-icon">
         <img draggable="false" alt="" src="${json[i].url}/favicon.ico">
       </div>
       <div class="my-title"><span>${json[i].title}</span></div>
-    </a>`
+    </div>`
   }
+  //挂载添加图标
   myList.innerHTML += 
   `<a class="my-item" id="my-add" href="#">
-    <div class="my-delete-icon" style="display: none;"></div>
     <div class="my-icon">
       <img draggable="false" alt="" src="/img/icon/add.svg">
     </div>
@@ -79,8 +81,21 @@ function renderMyList(json) {
   var myAdd = myList.querySelector("#my-add");
   myAdd.addEventListener("click", () => {
     myAddContainer.classList.remove("hidden")
-    console.log(2);
   })
+
+  //删除按钮添加事件
+  var myItems = myList.querySelectorAll(".my-item")
+  for(var i = 0; i < myItems.length-1; i++) {
+    myItems[i].querySelector(".my-delete-icon").addEventListener('click', function() {
+      this.parentNode.style.display = "none"
+    })
+    myItems[i].addEventListener('mouseover', function() {
+      this.querySelector(".my-delete-icon").classList.remove("hidden")
+    })
+    myItems[i].addEventListener('mouseleave', function() {
+      this.querySelector(".my-delete-icon").classList.add("hidden")
+    })
+  }
 }
 
 // web

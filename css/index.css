@@ -56,6 +56,7 @@
   align-content: flex-start;
 }
 .my-item {
+  position: relative;
   display: inline-flex;
   width: 112px;
   height: 112px;
@@ -66,8 +67,14 @@
   /* flex: 1; */
 }
 .my-item:hover {
-  background-color: rgb(232, 232, 233);
+  background-color: rgb(232, 232, 232);
   color: black;
+}
+.my-item a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 .my-icon {
   margin-top: 16px;
@@ -99,6 +106,23 @@
   overflow: hidden;
   text-overflow:ellipsis;
 }
+.my-delete-icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 11;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 24px;
+  /* font-size: 20px; */
+}
+.my-delete-icon:hover {
+  background-color: rgb(186, 186, 186);
+}
+
 
 #my-add-container {
   position: fixed;

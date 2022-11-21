@@ -7,11 +7,12 @@
   <title>Login</title>
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/pages/login.css">
+  <script src="../js/pages/login.js" type="module"></script>
 </head>
 <body>
-  <div class="container">
-
+  <div class="container-a">
     <form action="" method="post" class="form-box">
+      
       <div class="register-box hidden">
         <h1>Register</h1>
         <input type="text" placeholder="用户名">
@@ -19,6 +20,10 @@
         <input type="password" placeholder="密码">
         <input type="password" placeholder="确认密码">
         <button>注册</button>
+        <div class="bottom-box">
+          <span>已有账号？</span>
+          <a href="#" id="login">去登录</a>
+        </div>
       </div>
 
       <div class="login-box">
@@ -26,59 +31,30 @@
         <input type="text" placeholder="用户名">
         <input type="password" placeholder="密码">
         <button>登录</button>
+        <div class="bottom-box">
+          <span>没有账号？</span>
+          <a href="#" id="register">去注册</a>
+        </div>
       </div>
     </form>
+
+  </div>
+
+  <div class="container">
 
     <div class="con-box left">
       <h2>Website Library</h2>
       <p>快来创建自己的收藏夹吧</p>
       <img src="" alt="">
-      <div>
-        <span>已有账号？</span>
-        <a href="#" id="login">去登录</a>
-      </div>
     </div>
     <div class="con-box right">
       <h2>Website Library</h2>
       <p>快来寻找有意思的网站吧</p>
       <img src="" alt="">
-      <div>
-        <span>没有账号？</span>
-        <a href="#" id="register">去注册</a>
-      </div>
     </div>
     
   </div>
 
-  <script>
-    let login = document.querySelector('#login');
-    let register = document.querySelector('#register');
-    let form_box = document.querySelector('.form-box');
-    let register_box = document.querySelector('.register-box');
-    let login_box = document.querySelector('.login-box');
-    
-    register.addEventListener('click', () => {
-        form_box.style.transform='translateX(111%)';
-        login_box.classList.add('hidden');
-        register_box.classList.remove('hidden');
-    })
-    
-    login.addEventListener('click', () => {
-        form_box.style.transform='translateX(0%)';
-        register_box.classList.add('hidden');
-        login_box.classList.remove('hidden');
-    })
-
-
-    let imgs = document.querySelectorAll("img")
-    for(var img of imgs){
-      img.onerror = () => {
-        this.src = "../img/error.png";
-      }
-    }
-
-    
-  </script>
 </body>
 
 </html>
