@@ -1,8 +1,7 @@
 import {renderWebList} from './renderWebList.js'
-import tabbarJson from '/public/data/tabbarList.json' assert { type: 'json' };
-import allJson from '/public/data/all.json' assert { type: 'json' };
 
-
+var allJson = []
+var tabbarJson = []
 var webList = document.querySelector("#web-list-wrapper")
 
 //获取query参数
@@ -20,19 +19,39 @@ function GetRequest() {
   return kv;
 }
 
-//获取sql
+//获取全部list
 const base_url = 'http://127.0.0.1:8088'
-$.ajax({
-  type: 'GET',
-  url: `${base_url}/weblist`,
-  success: function(result) {
-    console.log(result.data);
-    renderWebList(result.data, webList);
-  }
-})
 
 
-//根据类型名称获取list
+new Promise((resolve, reject) => {
+  $.ajax({
+    type: 'GET',
+    url: `${base_url}/weblist`,
+    success: function(result) {
+      // console.log(result.data);
+      allJson = result.data
+      renderWebList(allJson, webList);
+      resolve(allJson)
+    },
+    error: function(err) {
+      console.log(err);
+      reject(err)
+    }
+  })
+}).then(value => {
+  //列表渲染
+  fetch("/public/data/tabbarList.json")
+  .then(res => {
+    return res.json()
+  }).then(json => {
+    tabbarJson = json
+    renderTabbarList(json)
+  })
+}).catch(err => console.log(err))
+
+
+
+//根据类型名称获取weblist
 function getListByTitle(s) {
   var j = {}
   for(j of tabbarJson){
@@ -50,15 +69,10 @@ function getListByTitle(s) {
 }
 
 
-//列表渲染
-fetch("/public/data/tabbarList.json")
-.then(res => {
-  return res.json()
-}).then(json => {
-  renderTabbarList(json)
-})
 
-//挂载
+
+
+//挂载tabbar
 function renderTabbarList(json) {
   var tabbarWrapper = document.querySelector("#tabbar-wrapper")
   var tabTypeLists= document.querySelectorAll(".tabbar")
@@ -75,7 +89,8 @@ function renderTabbarList(json) {
           //将选中信息添加到tabbarWrapper上
           tabbarWrapper.isSelectedType = json[j].type
           tabbarWrapper.isSelectedNum = json[j].num
-          renderWebList(getListByTitle(json[j].title), webList)
+          renderWebList(getListByTitle(json[j].label), webList)
+          console.log(1);
         }else {
           tabTypeLists[i].innerHTML += `<div class="tab-item" value="${json[j].num}">${json[j].label}</div>`
         }
@@ -104,6 +119,8 @@ function renderTabbarList(json) {
   }
   
 }
+
+
 
 //排序栏
 var selectItems = document.querySelectorAll(".select-item")
