@@ -18,8 +18,11 @@
     "url": "https://github.com/chocotassel/websiteLibrary/issues"
   },
   "homepage": "https://github.com/chocotassel/websiteLibrary#readme",
-  "dependencies": {
+  "devDependencies": {
     "jquery": "^3.6.1"
   },
-  "devDependencies": {}
+  "dependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
+  }
 }

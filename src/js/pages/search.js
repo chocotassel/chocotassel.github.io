@@ -1,6 +1,13 @@
+import {renderWebList} from './renderWebList.js'
+// import $ from 'jquery';
+import tabbarJson from '/public/data/tabbarList.json' assert { type: 'json' };
+import allJson from '/public/data/all.json' assert { type: 'json' };
+
+
+var webList = document.querySelector("#web-list-wrapper")
 
 //获取query参数
-function GetRequest() {    
+function GetRequest() {
   var url = location.search
   url = decodeURI(url)
   var kv = {}
@@ -14,17 +21,34 @@ function GetRequest() {
   return kv;
 }
 
-//根据type和num获取item
-function getTabItem(type, num){
-  var tabTypeLists = document.querySelectorAll(".tabbar")
-  for(var i = 1; i <= tabTypeLists.length; i++){
-    var tabItems = tabTypeLists.querySelectorAll(".tab-item")
-    for (let j = 1; j <= tabItems.length; j++) {
-      if(type == i && num == j) return tabItems[j]
+//获取sql
+const base_url = 'http://127.0.0.1:8088'
+// $.ajax({
+//   type: 'GET',
+//   url: `${base_url}/weblist`,
+//   success: function(result) {
+//     console.log(result.data);
+//   }
+// })
+
+
+//根据类型名称获取list
+function getListByTitle(s) {
+  var j = {}
+  for(j of tabbarJson){
+    if(j.label == s) {
+      break;
     }
   }
-  return
+  var list = []
+  for(var web of allJson){
+    if(web.type == j.type && web.num == j.num) {
+      list.push(web)
+    }
+  }
+  return list;
 }
+
 
 //列表渲染
 fetch("/public/data/tabbarList.json")
@@ -47,12 +71,13 @@ function renderTabbarList(json) {
       if (json[j].type == i + 1) {
         //判断是否和query参数相同
         if(kv.type == json[j].type && kv.num == json[j].num){
-          tabTypeLists[i].innerHTML += `<div class="tab-item tab-item-selected" value="${json[j].num}" isSelected=true>${json[j].title}</div>`
+          tabTypeLists[i].innerHTML += `<div class="tab-item tab-item-selected" value="${json[j].num}" isSelected=true>${json[j].label}</div>`
           //将选中信息添加到tabbarWrapper上
           tabbarWrapper.isSelectedType = json[j].type
           tabbarWrapper.isSelectedNum = json[j].num
+          renderWebList(getListByTitle(json[j].title), webList)
         }else {
-          tabTypeLists[i].innerHTML += `<div class="tab-item" value="${json[j].num}">${json[j].title}</div>`
+          tabTypeLists[i].innerHTML += `<div class="tab-item" value="${json[j].num}">${json[j].label}</div>`
         }
       }
       
@@ -72,12 +97,15 @@ function renderTabbarList(json) {
         }
         this.classList.add("tab-item-selected")
       }
+       // 网址列表渲染
+       renderWebList(getListByTitle(this.innerText), webList)
+      
     })
   }
   
 }
 
-
+//排序栏
 var selectItems = document.querySelectorAll(".select-item")
 for(var i = 1; i < selectItems.length; i++){
   selectItems[i].addEventListener("mouseover", function(){
@@ -88,10 +116,4 @@ for(var i = 1; i < selectItems.length; i++){
   })
 }
 
-// 网址列表渲染
-import {renderWebList} from './renderWebList.js'
-import gouwuJson from '/public/data/购物.json' assert { type: 'json' };
-var webList = document.querySelector("#web-list-wrapper")
-renderWebList(gouwuJson, webList)
 
-// console.log(window.location.search);

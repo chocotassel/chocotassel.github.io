@@ -134,7 +134,7 @@ function renderHotRank(json, tabbarList) {
   var arr = new Array()
   for(var i = 0; i < 14; i++){
     var index = Math.floor(Math.random()*tabbarList.length)
-    arr.push({"title": tabbarList[index].title,"type": tabbarList[index].type, "num": tabbarList[index].num})
+    arr.push({"title": tabbarList[index].label,"type": tabbarList[index].type, "num": tabbarList[index].num})
     tabbarList.splice(index, 1)
   }
 

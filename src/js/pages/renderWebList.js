@@ -1,5 +1,5 @@
 export const renderWebList = function(dataJson, webList) {
-  
+  webList.innerHTML = ''
   for(var i = 0; i < dataJson.length; i++){
     webList.innerHTML += `<div class="web-item">
       <a href="${dataJson[i].url}" class="web-item-title">${dataJson[i].title}</a>
