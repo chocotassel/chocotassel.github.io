@@ -1,5 +1,4 @@
 import {renderWebList} from './renderWebList.js'
-// import $ from 'jquery';
 import tabbarJson from '/public/data/tabbarList.json' assert { type: 'json' };
 import allJson from '/public/data/all.json' assert { type: 'json' };
 
@@ -23,13 +22,14 @@ function GetRequest() {
 
 //获取sql
 const base_url = 'http://127.0.0.1:8088'
-// $.ajax({
-//   type: 'GET',
-//   url: `${base_url}/weblist`,
-//   success: function(result) {
-//     console.log(result.data);
-//   }
-// })
+$.ajax({
+  type: 'GET',
+  url: `${base_url}/weblist`,
+  success: function(result) {
+    console.log(result.data);
+    renderWebList(result.data, webList);
+  }
+})
 
 
 //根据类型名称获取list

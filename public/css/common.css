@@ -15,6 +15,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.color-1{color: #d5ebe1;}
+.color-2{color: #b1d5c8;}
+.color-3{color: #99bcac;}
+.color-4{color: #80a492;}
+
+
 
 /* 搜索框 */
 #searchBox {
@@ -111,6 +117,7 @@ a:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
+  border: #80a492 1px solid;
 }
 .web-item-title {
   user-select: none;
@@ -142,26 +149,41 @@ a:hover {
   height: 28px;
   font: normal 400 15px/15px Arial;
 }
-.web-item-collect {
+.web-item-toolbar {
   position: absolute;
-  width: 48px;
-  height: 48px;
+  width: 192px;
+  height: 40px;
   border-radius: 24px;
   right: 20px;
   bottom: 0px;
   z-index: 2;
-  box-shadow: 3px 3px 10px #4a6d5b;
-
+  /* box-shadow: 3px 3px 10px #4a6d5b; */
+  display: flex;
 }
-.web-item-collect svg {
+.web-item-toolbar > div {
   cursor: pointer;
+  user-select: none;
+  width: 96px;
+  display: flex;
+  align-items: center;
+}
+.web-item-toolbar > div > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: nowrap;
+  /* color: #80a492; */
+}
+.web-item-toolbar svg {
   margin: 4px;
   width: 40px;
   height: 40px;
 }
-.web-item-collect svg:hover {
+.web-item-toolbar svg:hover {
   color: #80a492;
 }
+
+
 
 
 /* media */
