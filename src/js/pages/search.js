@@ -19,9 +19,8 @@ function GetRequest() {
   return kv;
 }
 
-//获取全部list
+//获取全部list，发起异步请求
 const base_url = 'http://127.0.0.1:8088'
-
 
 new Promise((resolve, reject) => {
   $.ajax({
@@ -34,12 +33,25 @@ new Promise((resolve, reject) => {
       resolve(allJson)
     },
     error: function(err) {
+      fetch("/public/data/all.json")
+      .then(res => res.json())
+      .then(json => allJson = json)
+      
       console.log(err);
       reject(err)
     }
   })
 }).then(value => {
-  //列表渲染
+  render()
+}).catch(err => {
+  console.log(err);
+  render
+})
+
+
+
+//列表渲染
+function render() {
   fetch("/public/data/tabbarList.json")
   .then(res => {
     return res.json()
@@ -47,9 +59,7 @@ new Promise((resolve, reject) => {
     tabbarJson = json
     renderTabbarList(json)
   })
-}).catch(err => console.log(err))
-
-
+}
 
 //根据类型名称获取weblist
 function getListByTitle(s) {
