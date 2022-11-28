@@ -1,802 +1,1002 @@
 [
   {
-    "num": "3",
+    "num": "8",
     "description": "专科",
     "id": "1",
-    "title": "湖南科技大学",
-    "type": "2",
-    "url": "www.willie-schuster.co"
-  },
-  {
-    "num": "5",
-    "description": "初中",
-    "id": "2",
-    "title": "江南大学",
+    "title": "河北建筑工程学院",
     "type": "1",
-    "url": "www.richie-roberts.net"
-  },
-  {
-    "num": "2",
-    "description": "小学",
-    "id": "3",
-    "title": "重庆文理学院",
-    "type": "3",
-    "url": "www.keren-gerlach.info"
-  },
-  {
-    "num": "2",
-    "description": "本科",
-    "id": "4",
-    "title": "内蒙古科技大学",
-    "type": "1",
-    "url": "www.antoinette-wilkinson.org"
-  },
-  {
-    "num": "6",
-    "description": "博士",
-    "id": "5",
-    "title": "西南农业大学",
-    "type": "1",
-    "url": "www.merrie-mccullough.info"
-  },
-  {
-    "num": "4",
-    "description": "高中",
-    "id": "6",
-    "title": "大连大学",
-    "type": "3",
-    "url": "www.myrtle-bradtke.co"
+    "click": "446",
+    "collect": "2",
+    "url": "www.bryon-schroeder.name"
   },
   {
     "num": "1",
+    "description": "小学",
+    "id": "2",
+    "title": "安徽农业大学",
+    "type": "4",
+    "click": "345",
+    "collect": "83",
+    "url": "www.ronnie-nader.name"
+  },
+  {
+    "num": "1",
+    "description": "高中",
+    "id": "3",
+    "title": "上海交通大学",
+    "type": "3",
+    "click": "3619908",
+    "collect": "25302818",
+    "url": "www.timothy-considine.biz"
+  },
+  {
+    "num": "1",
+    "description": "博士",
+    "id": "4",
+    "title": "郑州轻工业学院",
+    "type": "1",
+    "click": "567198632",
+    "collect": "2574",
+    "url": "www.leena-roob.com"
+  },
+  {
+    "num": "7",
+    "description": "小学",
+    "id": "5",
+    "title": "浙江大学",
+    "type": "4",
+    "click": "986",
+    "collect": "458",
+    "url": "www.george-hill.name"
+  },
+  {
+    "num": "6",
+    "description": "本科",
+    "id": "6",
+    "title": "天津理工大学",
+    "type": "3",
+    "click": "3344",
+    "collect": "1489985273",
+    "url": "www.paz-glover.biz"
+  },
+  {
+    "num": "3",
     "description": "专科",
     "id": "7",
-    "title": "合肥工业大学",
-    "type": "3",
-    "url": "www.kasey-thiel.co"
-  },
-  {
-    "num": "6",
-    "description": "研究生",
-    "id": "8",
-    "title": "辽宁工程技术大学",
-    "type": "2",
-    "url": "www.serafina-boehm.name"
-  },
-  {
-    "num": "8",
-    "description": "研究生",
-    "id": "9",
-    "title": "武汉化工学院",
-    "type": "1",
-    "url": "www.shannan-schmitt.com"
-  },
-  {
-    "num": "6",
-    "description": "研究生",
-    "id": "10",
-    "title": "北京交通大学",
-    "type": "4",
-    "url": "www.vicente-keebler.com"
-  },
-  {
-    "num": "5",
-    "description": "小学",
-    "id": "11",
-    "title": "浙江工业大学",
-    "type": "3",
-    "url": "www.trent-welch.info"
-  },
-  {
-    "num": "2",
-    "description": "小学",
-    "id": "12",
-    "title": "湖北中医学院",
-    "type": "3",
-    "url": "www.sharmaine-cassin.name"
-  },
-  {
-    "num": "5",
-    "description": "研究生",
-    "id": "13",
-    "title": "武汉大学",
-    "type": "2",
-    "url": "www.nicolasa-goodwin.biz"
-  },
-  {
-    "num": "6",
-    "description": "小学",
-    "id": "14",
-    "title": "同济大学",
-    "type": "4",
-    "url": "www.billy-brekke.name"
-  },
-  {
-    "num": "5",
-    "description": "专科",
-    "id": "15",
-    "title": "广西师范学院",
-    "type": "4",
-    "url": "www.omer-kuhic.io"
-  },
-  {
-    "num": "5",
-    "description": "研究生",
-    "id": "16",
-    "title": "嘉兴学院",
-    "type": "3",
-    "url": "www.lasonya-powlowski.biz"
-  },
-  {
-    "num": "2",
-    "description": "小学",
-    "id": "17",
-    "title": "五邑大学",
-    "type": "3",
-    "url": "www.dalia-orn.io"
-  },
-  {
-    "num": "5",
-    "description": "研究生",
-    "id": "18",
-    "title": "桂林工学院",
-    "type": "3",
-    "url": "www.efren-schoen.biz"
-  },
-  {
-    "num": "4",
-    "description": "研究生",
-    "id": "19",
-    "title": "皖西学院",
-    "type": "2",
-    "url": "www.rosetta-reichel.info"
-  },
-  {
-    "num": "1",
-    "description": "初中",
-    "id": "20",
-    "title": "青岛港湾职业技术学院",
-    "type": "1",
-    "url": "www.gregg-kuphal.io"
-  },
-  {
-    "num": "6",
-    "description": "本科",
-    "id": "21",
-    "title": "山东大学",
-    "type": "4",
-    "url": "www.rick-howell.io"
-  },
-  {
-    "num": "8",
-    "description": "研究生",
-    "id": "22",
-    "title": "山西大学",
-    "type": "4",
-    "url": "www.domenic-greenfelder.name"
-  },
-  {
-    "num": "6",
-    "description": "研究生",
-    "id": "23",
-    "title": "湖北民族学院",
-    "type": "2",
-    "url": "www.gilberto-herman.name"
-  },
-  {
-    "num": "3",
-    "description": "博士",
-    "id": "24",
-    "title": "河北大学",
-    "type": "2",
-    "url": "www.yetta-padberg.net"
-  },
-  {
-    "num": "8",
-    "description": "高中",
-    "id": "25",
-    "title": "长江大学",
-    "type": "4",
-    "url": "www.harland-medhurst.io"
-  },
-  {
-    "num": "3",
-    "description": "博士",
-    "id": "26",
-    "title": "华东交通大学",
-    "type": "3",
-    "url": "www.lindsay-bogan.co"
-  },
-  {
-    "num": "4",
-    "description": "初中",
-    "id": "27",
-    "title": "广西医科大学",
-    "type": "3",
-    "url": "www.rosario-hodkiewicz.io"
-  },
-  {
-    "num": "3",
-    "description": "初中",
-    "id": "28",
-    "title": "桂林工学院",
-    "type": "3",
-    "url": "www.ross-considine.org"
-  },
-  {
-    "num": "7",
-    "description": "高中",
-    "id": "29",
-    "title": "辽宁大学",
-    "type": "1",
-    "url": "www.jospeh-auer.io"
-  },
-  {
-    "num": "3",
-    "description": "小学",
-    "id": "30",
-    "title": "石家庄铁道学院",
-    "type": "1",
-    "url": "www.teddy-boyle.biz"
-  },
-  {
-    "num": "7",
-    "description": "博士",
-    "id": "31",
-    "title": "西南师范大学",
-    "type": "4",
-    "url": "www.brady-considine.info"
-  },
-  {
-    "num": "8",
-    "description": "小学",
-    "id": "32",
-    "title": "安徽农业大学",
-    "type": "3",
-    "url": "www.damon-quitzon.biz"
-  },
-  {
-    "num": "7",
-    "description": "小学",
-    "id": "33",
-    "title": "南京大学",
-    "type": "1",
-    "url": "www.shu-skiles.org"
-  },
-  {
-    "num": "1",
-    "description": "小学",
-    "id": "34",
-    "title": "北京邮电大学",
-    "type": "2",
-    "url": "www.katrice-ortiz.co"
-  },
-  {
-    "num": "1",
-    "description": "研究生",
-    "id": "35",
-    "title": "南昌大学",
-    "type": "2",
-    "url": "www.joy-mueller.name"
-  },
-  {
-    "num": "7",
-    "description": "博士",
-    "id": "36",
-    "title": "杭州电子科技大学",
-    "type": "4",
-    "url": "www.kelvin-rice.org"
-  },
-  {
-    "num": "8",
-    "description": "研究生",
-    "id": "37",
-    "title": "海南师范学院",
-    "type": "4",
-    "url": "www.alexandra-kutch.info"
-  },
-  {
-    "num": "5",
-    "description": "研究生",
-    "id": "38",
-    "title": "上海财经大学",
-    "type": "1",
-    "url": "www.sam-torp.biz"
-  },
-  {
-    "num": "3",
-    "description": "博士",
-    "id": "39",
-    "title": "河北工程学院",
-    "type": "1",
-    "url": "www.kenny-ankunding.io"
-  },
-  {
-    "num": "3",
-    "description": "高中",
-    "id": "40",
-    "title": "河北大学",
-    "type": "1",
-    "url": "www.neville-nienow.biz"
-  },
-  {
-    "num": "8",
-    "description": "小学",
-    "id": "41",
-    "title": "重庆邮电学院",
-    "type": "4",
-    "url": "www.amiee-prohaska.io"
-  },
-  {
-    "num": "7",
-    "description": "专科",
-    "id": "42",
-    "title": "安徽工程科技学院",
-    "type": "2",
-    "url": "www.curtis-balistreri.name"
-  },
-  {
-    "num": "3",
-    "description": "本科",
-    "id": "43",
-    "title": "浙江大学",
-    "type": "3",
-    "url": "www.ronnie-rodriguez.name"
-  },
-  {
-    "num": "8",
-    "description": "研究生",
-    "id": "44",
-    "title": "上海音乐学院",
-    "type": "3",
-    "url": "www.corina-grant.org"
-  },
-  {
-    "num": "1",
-    "description": "研究生",
-    "id": "45",
-    "title": "长治医学院",
-    "type": "2",
-    "url": "www.misty-kuphal.org"
-  },
-  {
-    "num": "6",
-    "description": "本科",
-    "id": "46",
-    "title": "上海财经大学",
-    "type": "3",
-    "url": "www.annabell-kunde.net"
-  },
-  {
-    "num": "4",
-    "description": "高中",
-    "id": "47",
-    "title": "华中科技大学",
-    "type": "2",
-    "url": "www.graham-welch.org"
-  },
-  {
-    "num": "1",
-    "description": "专科",
-    "id": "48",
-    "title": "山东科技大学",
-    "type": "4",
-    "url": "www.allan-homenick.info"
-  },
-  {
-    "num": "2",
-    "description": "初中",
-    "id": "49",
-    "title": "复旦大学",
-    "type": "4",
-    "url": "www.phillip-bauch.co"
-  },
-  {
-    "num": "3",
-    "description": "高中",
-    "id": "50",
-    "title": "浙江海洋学院",
-    "type": "3",
-    "url": "www.isidro-crona.co"
-  },
-  {
-    "num": "7",
-    "description": "高中",
-    "id": "51",
-    "title": "东北大学",
-    "type": "2",
-    "url": "www.emmitt-herzog.co"
-  },
-  {
-    "num": "8",
-    "description": "初中",
-    "id": "52",
-    "title": "上海音乐学院",
-    "type": "1",
-    "url": "www.mackenzie-bergnaum.io"
-  },
-  {
-    "num": "1",
-    "description": "初中",
-    "id": "53",
-    "title": "武汉音乐学院",
-    "type": "4",
-    "url": "www.rodger-lubowitz.name"
-  },
-  {
-    "num": "3",
-    "description": "专科",
-    "id": "54",
-    "title": "湛江海洋大学",
-    "type": "4",
-    "url": "www.georgene-mante.io"
-  },
-  {
-    "num": "6",
-    "description": "本科",
-    "id": "55",
-    "title": "桂林电子工业学院",
-    "type": "1",
-    "url": "www.lashanda-dubuque.info"
-  },
-  {
-    "num": "5",
-    "description": "高中",
-    "id": "56",
-    "title": "南京航空航天大学",
-    "type": "3",
-    "url": "www.latrina-corwin.org"
-  },
-  {
-    "num": "5",
-    "description": "研究生",
-    "id": "57",
-    "title": "河南科技大学",
-    "type": "3",
-    "url": "www.jermaine-ebert.com"
-  },
-  {
-    "num": "2",
-    "description": "本科",
-    "id": "58",
-    "title": "长治医学院",
-    "type": "3",
-    "url": "www.ivan-wisozk.name"
-  },
-  {
-    "num": "8",
-    "description": "专科",
-    "id": "59",
-    "title": "河海大学",
-    "type": "1",
-    "url": "www.issac-stracke.co"
-  },
-  {
-    "num": "7",
-    "description": "专科",
-    "id": "60",
-    "title": "杭州大学",
-    "type": "1",
-    "url": "www.warner-herzog.org"
-  },
-  {
-    "num": "1",
-    "description": "研究生",
-    "id": "61",
-    "title": "南京理工大学",
-    "type": "2",
-    "url": "www.laurence-moen.org"
-  },
-  {
-    "num": "6",
-    "description": "初中",
-    "id": "62",
-    "title": "广东工业大学",
-    "type": "4",
-    "url": "www.penni-von.org"
-  },
-  {
-    "num": "5",
-    "description": "初中",
-    "id": "63",
-    "title": "广东工业大学",
-    "type": "1",
-    "url": "www.hank-smitham.net"
-  },
-  {
-    "num": "4",
-    "description": "小学",
-    "id": "64",
-    "title": "桂林电子工业学院",
-    "type": "4",
-    "url": "www.noella-jast.co"
-  },
-  {
-    "num": "3",
-    "description": "博士",
-    "id": "65",
-    "title": "中国地质大学",
-    "type": "4",
-    "url": "www.demetrius-boehm.co"
-  },
-  {
-    "num": "3",
-    "description": "博士",
-    "id": "66",
-    "title": "河南农业大学",
-    "type": "2",
-    "url": "www.trudie-kutch.biz"
-  },
-  {
-    "num": "2",
-    "description": "高中",
-    "id": "67",
-    "title": "西南政法大学",
-    "type": "2",
-    "url": "www.porfirio-lueilwitz.net"
-  },
-  {
-    "num": "1",
-    "description": "专科",
-    "id": "68",
-    "title": "天津医科大学",
-    "type": "4",
-    "url": "www.ashely-gorczany.biz"
-  },
-  {
-    "num": "4",
-    "description": "高中",
-    "id": "69",
-    "title": "济南大学",
-    "type": "2",
-    "url": "www.gregory-weissnat.io"
-  },
-  {
-    "num": "2",
-    "description": "专科",
-    "id": "70",
-    "title": "广西师范大学",
-    "type": "2",
-    "url": "www.elden-wehner.org"
-  },
-  {
-    "num": "1",
-    "description": "本科",
-    "id": "71",
-    "title": "海南大学",
-    "type": "2",
-    "url": "www.geneva-murray.io"
-  },
-  {
-    "num": "8",
-    "description": "本科",
-    "id": "72",
-    "title": "河北师范大学",
-    "type": "2",
-    "url": "www.maragret-quigley.biz"
-  },
-  {
-    "num": "8",
-    "description": "专科",
-    "id": "73",
     "title": "安徽大学",
     "type": "3",
-    "url": "www.jewell-yost.net"
+    "click": "75628",
+    "collect": "7846",
+    "url": "www.britney-hane.co"
+  },
+  {
+    "num": "4",
+    "description": "研究生",
+    "id": "8",
+    "title": "南京航空航天大学",
+    "type": "1",
+    "click": "43635",
+    "collect": "973695505",
+    "url": "www.malvina-emmerich.name"
+  },
+  {
+    "num": "7",
+    "description": "本科",
+    "id": "9",
+    "title": "湖北工业大学",
+    "type": "2",
+    "click": "10335048",
+    "collect": "63464095",
+    "url": "www.jacque-kuhlman.co"
+  },
+  {
+    "num": "7",
+    "description": "初中",
+    "id": "10",
+    "title": "桂林电子工业学院",
+    "type": "2",
+    "click": "4",
+    "collect": "9",
+    "url": "www.wendy-hickle.net"
+  },
+  {
+    "num": "2",
+    "description": "本科",
+    "id": "11",
+    "title": "广州大学",
+    "type": "2",
+    "click": "32511788",
+    "collect": "0",
+    "url": "www.palma-monahan.biz"
+  },
+  {
+    "num": "5",
+    "description": "博士",
+    "id": "12",
+    "title": "天津大学",
+    "type": "1",
+    "click": "5",
+    "collect": "32133",
+    "url": "www.domenica-schuster.co"
+  },
+  {
+    "num": "6",
+    "description": "初中",
+    "id": "13",
+    "title": "安徽医科大学",
+    "type": "4",
+    "click": "19056",
+    "collect": "422",
+    "url": "www.dannielle-denesik.net"
+  },
+  {
+    "num": "8",
+    "description": "本科",
+    "id": "14",
+    "title": "湖北大学",
+    "type": "3",
+    "click": "8",
+    "collect": "5440490685",
+    "url": "www.joseph-schaefer.info"
+  },
+  {
+    "num": "3",
+    "description": "高中",
+    "id": "15",
+    "title": "华中农业大学",
+    "type": "4",
+    "click": "44440151",
+    "collect": "21518151",
+    "url": "www.karleen-paucek.com"
+  },
+  {
+    "num": "2",
+    "description": "专科",
+    "id": "16",
+    "title": "中央财经大学",
+    "type": "2",
+    "click": "4840424052",
+    "collect": "311577173",
+    "url": "www.gerry-ohara.biz"
+  },
+  {
+    "num": "1",
+    "description": "研究生",
+    "id": "17",
+    "title": "重庆医科大学",
+    "type": "1",
+    "click": "5",
+    "collect": "5",
+    "url": "www.yong-mante.io"
+  },
+  {
+    "num": "4",
+    "description": "博士",
+    "id": "18",
+    "title": "湛江海洋大学",
+    "type": "4",
+    "click": "770",
+    "collect": "87790703",
+    "url": "www.rocio-altenwerth.biz"
+  },
+  {
+    "num": "2",
+    "description": "本科",
+    "id": "19",
+    "title": "湖北大学",
+    "type": "4",
+    "click": "8",
+    "collect": "368152",
+    "url": "www.noel-schamberger.com"
+  },
+  {
+    "num": "1",
+    "description": "研究生",
+    "id": "20",
+    "title": "山西师范大学",
+    "type": "2",
+    "click": "86708",
+    "collect": "8418906",
+    "url": "www.oralia-gorczany.io"
+  },
+  {
+    "num": "8",
+    "description": "本科",
+    "id": "21",
+    "title": "上海应用技术学院",
+    "type": "1",
+    "click": "25",
+    "collect": "240312",
+    "url": "www.andre-pollich.info"
+  },
+  {
+    "num": "3",
+    "description": "研究生",
+    "id": "22",
+    "title": "南昌工程学院",
+    "type": "4",
+    "click": "256719",
+    "collect": "91439",
+    "url": "www.rosette-crona.name"
+  },
+  {
+    "num": "3",
+    "description": "初中",
+    "id": "23",
+    "title": "长治医学院",
+    "type": "3",
+    "click": "8092",
+    "collect": "25531013",
+    "url": "www.jules-schultz.com"
+  },
+  {
+    "num": "4",
+    "description": "小学",
+    "id": "24",
+    "title": "南京理工大学",
+    "type": "3",
+    "click": "776669",
+    "collect": "613430103",
+    "url": "www.richard-wehner.name"
+  },
+  {
+    "num": "5",
+    "description": "高中",
+    "id": "25",
+    "title": "广西师范学院",
+    "type": "3",
+    "click": "1",
+    "collect": "2387523",
+    "url": "www.senaida-mayer.info"
+  },
+  {
+    "num": "1",
+    "description": "初中",
+    "id": "26",
+    "title": "复旦大学",
+    "type": "3",
+    "click": "98",
+    "collect": "4301",
+    "url": "www.luella-roob.net"
+  },
+  {
+    "num": "3",
+    "description": "本科",
+    "id": "27",
+    "title": "辽宁大学",
+    "type": "4",
+    "click": "877421",
+    "collect": "916941",
+    "url": "www.christopher-stark.org"
+  },
+  {
+    "num": "7",
+    "description": "研究生",
+    "id": "28",
+    "title": "青岛港湾职业技术学院",
+    "type": "3",
+    "click": "5943045",
+    "collect": "2207891",
+    "url": "www.teodoro-feeney.info"
+  },
+  {
+    "num": "5",
+    "description": "本科",
+    "id": "29",
+    "title": "内蒙古医学院",
+    "type": "4",
+    "click": "19779304",
+    "collect": "1",
+    "url": "www.roland-ohara.net"
+  },
+  {
+    "num": "4",
+    "description": "小学",
+    "id": "30",
+    "title": "湖北师范学院",
+    "type": "3",
+    "click": "48134",
+    "collect": "4233109",
+    "url": "www.dana-bergstrom.org"
+  },
+  {
+    "num": "4",
+    "description": "博士",
+    "id": "31",
+    "title": "中国人民武装警察部队学院",
+    "type": "3",
+    "click": "8987",
+    "collect": "6233403348",
+    "url": "www.chae-toy.com"
+  },
+  {
+    "num": "3",
+    "description": "小学",
+    "id": "32",
+    "title": "上海理工大学",
+    "type": "2",
+    "click": "5683139",
+    "collect": "4375891830",
+    "url": "www.chassidy-raynor.biz"
   },
   {
     "num": "7",
     "description": "高中",
-    "id": "74",
-    "title": "安徽师范大学",
-    "type": "3",
-    "url": "www.lucretia-schulist.org"
-  },
-  {
-    "num": "5",
-    "description": "初中",
-    "id": "75",
-    "title": "沈阳农业大学",
+    "id": "33",
+    "title": "华东交通大学",
     "type": "1",
-    "url": "www.dirk-hagenes.info"
+    "click": "2",
+    "collect": "9240791",
+    "url": "www.dovie-cole.name"
   },
   {
-    "num": "4",
-    "description": "研究生",
-    "id": "76",
-    "title": "河南农业大学",
-    "type": "3",
-    "url": "www.jerrell-kunze.net"
-  },
-  {
-    "num": "5",
-    "description": "小学",
-    "id": "77",
-    "title": "北京林业大学",
-    "type": "1",
-    "url": "www.branden-block.info"
-  },
-  {
-    "num": "5",
-    "description": "专科",
-    "id": "78",
-    "title": "河北工程学院",
-    "type": "3",
-    "url": "www.tanika-mcglynn.io"
+    "num": "6",
+    "description": "博士",
+    "id": "34",
+    "title": "河海大学",
+    "type": "4",
+    "click": "650",
+    "collect": "68",
+    "url": "www.jonah-grimes.org"
   },
   {
     "num": "1",
     "description": "专科",
-    "id": "79",
-    "title": "湖北师范学院",
+    "id": "35",
+    "title": "中国协和医科大学",
+    "type": "4",
+    "click": "21",
+    "collect": "7583669549",
+    "url": "www.florencio-maggio.net"
+  },
+  {
+    "num": "5",
+    "description": "初中",
+    "id": "36",
+    "title": "内蒙古民族大学",
+    "type": "3",
+    "click": "187",
+    "collect": "6552144070",
+    "url": "www.isreal-rath.org"
+  },
+  {
+    "num": "1",
+    "description": "专科",
+    "id": "37",
+    "title": "华北电力大学",
     "type": "2",
-    "url": "www.veta-schmitt.co"
+    "click": "297879702",
+    "collect": "96827",
+    "url": "www.willis-schoen.name"
+  },
+  {
+    "num": "1",
+    "description": "博士",
+    "id": "38",
+    "title": "大连大学",
+    "type": "1",
+    "click": "93667380",
+    "collect": "585129",
+    "url": "www.cletus-anderson.biz"
+  },
+  {
+    "num": "6",
+    "description": "小学",
+    "id": "39",
+    "title": "湖北师范学院",
+    "type": "1",
+    "click": "9002425",
+    "collect": "113",
+    "url": "www.dulcie-effertz.info"
+  },
+  {
+    "num": "1",
+    "description": "研究生",
+    "id": "40",
+    "title": "景德镇陶瓷学院",
+    "type": "1",
+    "click": "4317",
+    "collect": "78042402",
+    "url": "www.elton-crooks.co"
+  },
+  {
+    "num": "8",
+    "description": "专科",
+    "id": "41",
+    "title": "天津科技大学",
+    "type": "2",
+    "click": "8161",
+    "collect": "6948401893",
+    "url": "www.neomi-lebsack.co"
+  },
+  {
+    "num": "2",
+    "description": "高中",
+    "id": "42",
+    "title": "江西师范大学",
+    "type": "1",
+    "click": "17277",
+    "collect": "2624",
+    "url": "www.winfred-frami.name"
+  },
+  {
+    "num": "8",
+    "description": "专科",
+    "id": "43",
+    "title": "湖北中医学院",
+    "type": "4",
+    "click": "152",
+    "collect": "344864",
+    "url": "www.kirk-haag.com"
+  },
+  {
+    "num": "3",
+    "description": "小学",
+    "id": "44",
+    "title": "安徽大学",
+    "type": "2",
+    "click": "449587329",
+    "collect": "25137343",
+    "url": "www.waylon-dickens.net"
+  },
+  {
+    "num": "8",
+    "description": "专科",
+    "id": "45",
+    "title": "北京交通大学",
+    "type": "3",
+    "click": "556",
+    "collect": "95",
+    "url": "www.arthur-hoeger.name"
+  },
+  {
+    "num": "1",
+    "description": "研究生",
+    "id": "46",
+    "title": "武汉科技学院",
+    "type": "3",
+    "click": "67165293",
+    "collect": "3349",
+    "url": "www.ivey-osinski.info"
+  },
+  {
+    "num": "3",
+    "description": "小学",
+    "id": "47",
+    "title": "内蒙古财经学院",
+    "type": "1",
+    "click": "2509",
+    "collect": "4552511",
+    "url": "www.pasquale-erdman.org"
+  },
+  {
+    "num": "2",
+    "description": "高中",
+    "id": "48",
+    "title": "集美大学",
+    "type": "4",
+    "click": "914935",
+    "collect": "548930147",
+    "url": "www.jamison-hyatt.org"
+  },
+  {
+    "num": "1",
+    "description": "本科",
+    "id": "49",
+    "title": "杭州电子科技大学",
+    "type": "3",
+    "click": "24275048",
+    "collect": "4",
+    "url": "www.merrilee-turcotte.net"
   },
   {
     "num": "4",
-    "description": "研究生",
-    "id": "80",
-    "title": "深圳大学",
+    "description": "小学",
+    "id": "50",
+    "title": "安徽农业大学",
+    "type": "4",
+    "click": "8742208471",
+    "collect": "46121328",
+    "url": "www.gaston-legros.co"
+  },
+  {
+    "num": "1",
+    "description": "小学",
+    "id": "51",
+    "title": "厦门大学",
+    "type": "1",
+    "click": "9",
+    "collect": "24525395",
+    "url": "www.pedro-emard.name"
+  },
+  {
+    "num": "3",
+    "description": "本科",
+    "id": "52",
+    "title": "内蒙古医学院",
+    "type": "3",
+    "click": "21669",
+    "collect": "277024",
+    "url": "www.raye-schroeder.org"
+  },
+  {
+    "num": "3",
+    "description": "小学",
+    "id": "53",
+    "title": "天津城市建设学院",
+    "type": "4",
+    "click": "416540724",
+    "collect": "287525",
+    "url": "www.jermaine-hessel.co"
+  },
+  {
+    "num": "5",
+    "description": "专科",
+    "id": "54",
+    "title": "南京大学",
     "type": "2",
-    "url": "www.efren-considine.com"
+    "click": "8423",
+    "collect": "7004119037",
+    "url": "www.casey-murazik.org"
   },
   {
     "num": "8",
     "description": "初中",
-    "id": "81",
-    "title": "景德镇陶瓷学院",
-    "type": "3",
-    "url": "www.alvina-rogahn.biz"
-  },
-  {
-    "num": "1",
-    "description": "初中",
-    "id": "82",
-    "title": "中国人民武装警察部队学院",
-    "type": "3",
-    "url": "www.abel-okon.com"
+    "id": "55",
+    "title": "山东农业大学",
+    "type": "2",
+    "click": "923456373",
+    "collect": "44",
+    "url": "www.hildred-schoen.net"
   },
   {
     "num": "7",
-    "description": "初中",
-    "id": "83",
-    "title": "浙江科技学院",
-    "type": "2",
-    "url": "www.elanor-gerlach.io"
-  },
-  {
-    "num": "5",
-    "description": "专科",
-    "id": "84",
-    "title": "山西医科大学",
+    "description": "小学",
+    "id": "56",
+    "title": "河北工程学院",
     "type": "3",
-    "url": "www.sherwood-langworth.info"
-  },
-  {
-    "num": "4",
-    "description": "初中",
-    "id": "85",
-    "title": "中北大学",
-    "type": "1",
-    "url": "www.timothy-nolan.biz"
-  },
-  {
-    "num": "7",
-    "description": "本科",
-    "id": "86",
-    "title": "武汉科技大学",
-    "type": "3",
-    "url": "www.marcos-ohara.io"
-  },
-  {
-    "num": "5",
-    "description": "本科",
-    "id": "87",
-    "title": "浙江大学",
-    "type": "2",
-    "url": "www.edward-schroeder.io"
-  },
-  {
-    "num": "1",
-    "description": "本科",
-    "id": "88",
-    "title": "湖南大学",
-    "type": "3",
-    "url": "www.jeramy-gibson.net"
-  },
-  {
-    "num": "5",
-    "description": "本科",
-    "id": "89",
-    "title": "河海大学",
-    "type": "2",
-    "url": "www.elanor-ortiz.net"
+    "click": "845134737",
+    "collect": "21874",
+    "url": "www.chadwick-schuppe.net"
   },
   {
     "num": "2",
     "description": "初中",
-    "id": "90",
-    "title": "中山大学",
-    "type": "4",
-    "url": "www.debbi-murazik.info"
-  },
-  {
-    "num": "3",
-    "description": "小学",
-    "id": "91",
-    "title": "南京大学",
-    "type": "3",
-    "url": "www.richie-ratke.co"
-  },
-  {
-    "num": "5",
-    "description": "初中",
-    "id": "92",
-    "title": "河南理工大学",
+    "id": "57",
+    "title": "福建医科大学",
     "type": "1",
-    "url": "www.gabriel-reinger.org"
+    "click": "889",
+    "collect": "236335",
+    "url": "www.adolfo-flatley.name"
+  },
+  {
+    "num": "1",
+    "description": "专科",
+    "id": "58",
+    "title": "株洲工学院",
+    "type": "1",
+    "click": "24417289",
+    "collect": "66597463",
+    "url": "www.beth-mante.name"
+  },
+  {
+    "num": "4",
+    "description": "专科",
+    "id": "59",
+    "title": "中南财经政法大学",
+    "type": "2",
+    "click": "754057",
+    "collect": "6821",
+    "url": "www.kerry-davis.net"
+  },
+  {
+    "num": "1",
+    "description": "博士",
+    "id": "60",
+    "title": "上海财经大学",
+    "type": "3",
+    "click": "529852777",
+    "collect": "890",
+    "url": "www.jason-littel.net"
   },
   {
     "num": "7",
-    "description": "博士",
-    "id": "93",
-    "title": "集美大学",
-    "type": "2",
-    "url": "www.iva-jacobs.info"
-  },
-  {
-    "num": "5",
-    "description": "初中",
-    "id": "94",
-    "title": "中国农业大学",
-    "type": "1",
-    "url": "www.karen-hudson.name"
-  },
-  {
-    "num": "1",
     "description": "小学",
-    "id": "95",
-    "title": "华中师范大学",
-    "type": "2",
-    "url": "www.stormy-roob.name"
+    "id": "61",
+    "title": "江西财经大学",
+    "type": "3",
+    "click": "6243767",
+    "collect": "616",
+    "url": "www.herschel-homenick.info"
   },
   {
-    "num": "3",
-    "description": "研究生",
-    "id": "96",
-    "title": "中国人民大学",
+    "num": "6",
+    "description": "小学",
+    "id": "62",
+    "title": "景德镇陶瓷学院",
     "type": "1",
-    "url": "www.weston-kassulke.com"
+    "click": "45",
+    "collect": "8618314676",
+    "url": "www.wes-oconner.org"
   },
   {
-    "num": "1",
-    "description": "高中",
-    "id": "97",
-    "title": "重庆大学",
-    "type": "1",
-    "url": "www.laine-greenfelder.net"
-  },
-  {
-    "num": "8",
-    "description": "研究生",
-    "id": "98",
-    "title": "河北医科大学",
-    "type": "2",
-    "url": "www.bernard-willms.name"
-  },
-  {
-    "num": "1",
+    "num": "4",
     "description": "博士",
-    "id": "99",
-    "title": "东华大学",
-    "type": "4",
-    "url": "www.kera-damore.name"
+    "id": "63",
+    "title": "华北水利水电学院",
+    "type": "3",
+    "click": "59008",
+    "collect": "8",
+    "url": "www.mauro-vandervort.net"
+  },
+  {
+    "num": "4",
+    "description": "高中",
+    "id": "64",
+    "title": "湖北中医学院",
+    "type": "3",
+    "click": "11",
+    "collect": "9309468",
+    "url": "www.del-rice.io"
   },
   {
     "num": "1",
     "description": "本科",
-    "id": "100",
-    "title": "南京理工大学",
+    "id": "65",
+    "title": "河南理工大学",
+    "type": "3",
+    "click": "5897",
+    "collect": "2611052711",
+    "url": "www.madeline-schowalter.name"
+  },
+  {
+    "num": "6",
+    "description": "小学",
+    "id": "66",
+    "title": "中央民族大学",
+    "type": "4",
+    "click": "3",
+    "collect": "154",
+    "url": "www.carolee-hahn.name"
+  },
+  {
+    "num": "1",
+    "description": "专科",
+    "id": "67",
+    "title": "福州大学",
+    "type": "3",
+    "click": "10499769",
+    "collect": "5",
+    "url": "www.nettie-goldner.com"
+  },
+  {
+    "num": "8",
+    "description": "初中",
+    "id": "68",
+    "title": "山东师范大学",
+    "type": "2",
+    "click": "3225481",
+    "collect": "131206199",
+    "url": "www.piedad-maggio.org"
+  },
+  {
+    "num": "5",
+    "description": "小学",
+    "id": "69",
+    "title": "河北医科大学",
+    "type": "3",
+    "click": "7641512742",
+    "collect": "27",
+    "url": "www.lexie-wuckert.org"
+  },
+  {
+    "num": "5",
+    "description": "本科",
+    "id": "70",
+    "title": "武汉化工学院",
     "type": "1",
-    "url": "www.arnoldo-bauch.net"
+    "click": "7",
+    "collect": "11224963",
+    "url": "www.simonne-walker.io"
+  },
+  {
+    "num": "8",
+    "description": "小学",
+    "id": "71",
+    "title": "河南大学",
+    "type": "3",
+    "click": "227",
+    "collect": "145419",
+    "url": "www.rivka-hoeger.org"
+  },
+  {
+    "num": "5",
+    "description": "专科",
+    "id": "72",
+    "title": "山西农业大学",
+    "type": "4",
+    "click": "60888665",
+    "collect": "949701892",
+    "url": "www.josue-bayer.net"
+  },
+  {
+    "num": "1",
+    "description": "本科",
+    "id": "73",
+    "title": "内蒙古财经学院",
+    "type": "4",
+    "click": "7238001",
+    "collect": "49085966",
+    "url": "www.riley-rogahn.biz"
+  },
+  {
+    "num": "4",
+    "description": "高中",
+    "id": "74",
+    "title": "辽宁大学",
+    "type": "4",
+    "click": "382",
+    "collect": "630154214",
+    "url": "www.angelo-wilderman.io"
+  },
+  {
+    "num": "8",
+    "description": "小学",
+    "id": "75",
+    "title": "河北医科大学",
+    "type": "2",
+    "click": "279468",
+    "collect": "8450721569",
+    "url": "www.tod-runolfsdottir.io"
+  },
+  {
+    "num": "4",
+    "description": "博士",
+    "id": "76",
+    "title": "大连大学",
+    "type": "2",
+    "click": "917593",
+    "collect": "962578",
+    "url": "www.hilton-schultz.org"
+  },
+  {
+    "num": "1",
+    "description": "专科",
+    "id": "77",
+    "title": "广州中医药大学",
+    "type": "4",
+    "click": "96361188",
+    "collect": "7",
+    "url": "www.cinda-koss.net"
+  },
+  {
+    "num": "7",
+    "description": "本科",
+    "id": "78",
+    "title": "华北水利水电学院",
+    "type": "4",
+    "click": "5438677324",
+    "collect": "43",
+    "url": "www.jame-hoppe.name"
+  },
+  {
+    "num": "7",
+    "description": "高中",
+    "id": "79",
+    "title": "天津理工大学",
+    "type": "2",
+    "click": "2899110",
+    "collect": "4612093",
+    "url": "www.curtis-pouros.io"
+  },
+  {
+    "num": "8",
+    "description": "初中",
+    "id": "80",
+    "title": "重庆大学",
+    "type": "1",
+    "click": "970",
+    "collect": "553779936",
+    "url": "www.monty-connelly.name"
+  },
+  {
+    "num": "6",
+    "description": "专科",
+    "id": "81",
+    "title": "河北科技大学",
+    "type": "1",
+    "click": "915952",
+    "collect": "9",
+    "url": "www.ronald-howell.com"
+  },
+  {
+    "num": "6",
+    "description": "专科",
+    "id": "82",
+    "title": "南开大学",
+    "type": "2",
+    "click": "9845797",
+    "collect": "3017",
+    "url": "www.renay-breitenberg.net"
+  },
+  {
+    "num": "8",
+    "description": "初中",
+    "id": "83",
+    "title": "武汉科技学院",
+    "type": "4",
+    "click": "84",
+    "collect": "98494",
+    "url": "www.conchita-miller.io"
+  },
+  {
+    "num": "3",
+    "description": "初中",
+    "id": "84",
+    "title": "西南农业大学",
+    "type": "3",
+    "click": "74558",
+    "collect": "3",
+    "url": "www.billi-lang.info"
+  },
+  {
+    "num": "3",
+    "description": "博士",
+    "id": "85",
+    "title": "河北师范大学",
+    "type": "1",
+    "click": "5320",
+    "collect": "87455",
+    "url": "www.broderick-hermann.info"
+  },
+  {
+    "num": "2",
+    "description": "小学",
+    "id": "86",
+    "title": "上海应用技术学院",
+    "type": "3",
+    "click": "86488495",
+    "collect": "10",
+    "url": "www.bell-swift.co"
+  },
+  {
+    "num": "1",
+    "description": "初中",
+    "id": "87",
+    "title": "浙江工业大学",
+    "type": "4",
+    "click": "120068886",
+    "collect": "826895",
+    "url": "www.branda-blick.biz"
+  },
+  {
+    "num": "3",
+    "description": "初中",
+    "id": "88",
+    "title": "天津工业大学",
+    "type": "2",
+    "click": "1651",
+    "collect": "50389913",
+    "url": "www.rebecca-schmeler.info"
+  },
+  {
+    "num": "1",
+    "description": "本科",
+    "id": "89",
+    "title": "重庆医科大学",
+    "type": "2",
+    "click": "6360795454",
+    "collect": "45771",
+    "url": "www.thomasine-jenkins.info"
+  },
+  {
+    "num": "1",
+    "description": "初中",
+    "id": "90",
+    "title": "浙江大学",
+    "type": "1",
+    "click": "25",
+    "collect": "4199",
+    "url": "www.tiffani-walsh.name"
+  },
+  {
+    "num": "7",
+    "description": "初中",
+    "id": "91",
+    "title": "大连大学",
+    "type": "3",
+    "click": "467850",
+    "collect": "716",
+    "url": "www.john-stroman.net"
+  },
+  {
+    "num": "6",
+    "description": "本科",
+    "id": "92",
+    "title": "华中农业大学",
+    "type": "3",
+    "click": "9",
+    "collect": "117002454",
+    "url": "www.albert-quigley.org"
+  },
+  {
+    "num": "3",
+    "description": "初中",
+    "id": "93",
+    "title": "海南师范学院",
+    "type": "2",
+    "click": "78",
+    "collect": "160614",
+    "url": "www.bebe-jacobs.co"
+  },
+  {
+    "num": "1",
+    "description": "博士",
+    "id": "94",
+    "title": "中国药科大学",
+    "type": "3",
+    "click": "338",
+    "collect": "13696231",
+    "url": "www.vilma-crooks.net"
+  },
+  {
+    "num": "3",
+    "description": "博士",
+    "id": "95",
+    "title": "中北大学",
+    "type": "1",
+    "click": "740451",
+    "collect": "2805461",
+    "url": "www.deidre-olson.info"
+  },
+  {
+    "num": "1",
+    "description": "专科",
+    "id": "96",
+    "title": "南华大学",
+    "type": "3",
+    "click": "48647",
+    "collect": "88173869",
+    "url": "www.wava-murphy.io"
+  },
+  {
+    "num": "2",
+    "description": "专科",
+    "id": "97",
+    "title": "浙江师范大学",
+    "type": "2",
+    "click": "86153",
+    "collect": "2044",
+    "url": "www.hoa-beatty.info"
+  },
+  {
+    "num": "2",
+    "description": "专科",
+    "id": "98",
+    "title": "福州大学",
+    "type": "3",
+    "click": "717584212",
+    "collect": "2861",
+    "url": "www.shanell-walsh.info"
+  },
+  {
+    "num": "7",
+    "description": "研究生",
+    "id": "99",
+    "title": "上海理工大学",
+    "type": "1",
+    "click": "61",
+    "collect": "953948265",
+    "url": "www.joel-hand.name"
+  },
+  {
+    "num": "3",
+    "description": "小学",
+    "id": "100",
+    "title": "中央民族大学",
+    "type": "3",
+    "click": "8040494274",
+    "collect": "15898",
+    "url": "www.nicholas-cartwright.name"
   }
 ]
