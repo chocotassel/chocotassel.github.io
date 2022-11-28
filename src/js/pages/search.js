@@ -33,6 +33,7 @@ new Promise((resolve, reject) => {
       resolve(allJson)
     },
     error: function(err) {
+      console.log(13);
       fetch("/public/data/all.json")
       .then(res => res.json())
       .then(json => allJson = json)
@@ -45,7 +46,7 @@ new Promise((resolve, reject) => {
   render()
 }).catch(err => {
   console.log(err);
-  render
+  render()
 })
 
 
