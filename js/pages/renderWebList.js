@@ -1,27 +1,58 @@
 
 const base_url = 'http://127.0.0.1:8088'
 
+// var allJson = []
+// $.ajax({
+//   method: 'GET',
+//   url: '/public/data/all.json', 
+//   success: data =>{
+//     for(var d of data) {
+//       d.num = parseInt(d.num)
+//       d.id = parseInt(d.id)
+//       d.type = parseInt(d.type)
+//       d.click = parseInt(d.click)
+//       d.collect = parseInt(d.collect)
+//     }
+//     allJson = data
+//   },
+//   error: (err) => console.log(err)
+// })
 
 //收藏
-function handleCollect(n, webId) {
-  axios.put('/public/data/all.json', {
-    type: "collect",
-    num: n
-  }).then(res => {
-    this.querySelector(".info-text").innerHTML = res.data.num.collect
-  }).catch(err => console.log(err))
+function handleCollect(n, webId, allJson) {
+  // axios.put('/public/data/all.json', {
+  //   type: "collect",
+  //   num: n
+  // }).then(res => {
+  //   this.querySelector(".info-text").innerHTML = res.data.num.collect
+  // }).catch(err => console.log(err))
 
+  for(var i = 0; i < allJson.length; i++) {
+    if(allJson[i].id == webId) {
+      allJson[i].collect += n
+      this.querySelector(".info-text").innerHTML = allJson[i].collect
+      return
+    }
+  }
+  
 }
 
 
 //点击
-function handleClick(webId) {
-  axios.put(base_url + '/weblist/' + webId, {
-    type: "click",
-    num: 1
-  }).then(res => {
-    console.log(res.data.num);
-  }).catch(err => console.log(err))
+function handleClick(webId, allJson) {
+  // axios.put(base_url + '/weblist/' + webId, {
+  //   type: "click",
+  //   num: 1
+  // }).then(res => {
+  //   console.log(res.data.num);
+  // }).catch(err => console.log(err))
+
+  for(var i = 0; i < allJson.length; i++) {
+    if(allJson[i].id == webId) {
+      allJson[i].click++
+      return
+    }
+  }
 }
 
 export const renderWebList = function(dataJson, webList) {
@@ -60,12 +91,12 @@ export const renderWebList = function(dataJson, webList) {
         s[0].classList.add("hidden");
         s[1].classList.remove("hidden");
         this.querySelector("span").classList.add("color-4")
-        handleCollect.call(this, 1, webId)
+        handleCollect.call(this, 1, webId, dataJson)
       }else{
         s[0].classList.remove("hidden");
         s[1].classList.add("hidden");
         this.querySelector("span").classList.remove("color-4")
-        handleCollect.call(this, -1, webId)
+        handleCollect.call(this, -1, webId, dataJson)
       }
       this.i++;
     })

@@ -3,6 +3,7 @@ import {renderWebList} from './renderWebList.js'
 var allJson = []
 var tabbarJson = []
 var webList = document.querySelector("#web-list-wrapper")
+var title = ''
 
 //获取query参数
 function GetRequest() {
@@ -35,7 +36,16 @@ new Promise((resolve, reject) => {
     error: function(err) {
       fetch("/public/data/all.json")
       .then(res => res.json())
-      .then(json => allJson = json)
+      .then(data => {
+        for(var d of data) {
+          d.num = parseInt(d.num)
+          d.id = parseInt(d.id)
+          d.type = parseInt(d.type)
+          d.click = parseInt(d.click)
+          d.collect = parseInt(d.collect)
+        }
+        allJson = data
+      })
       .then(() => reject(err))
       
     }
@@ -122,7 +132,8 @@ function renderTabbarList(json) {
         this.classList.add("tab-item-selected")
       }
        // 网址列表渲染
-       renderWebList(getListByTitle(this.innerText), webList)
+       title = this.innerText
+       renderWebList(getListByTitle(title), webList)
       
     })
   }
@@ -141,5 +152,62 @@ for(var i = 1; i < selectItems.length; i++){
     this.querySelector("ul").classList.add("hidden")
   })
 }
+
+//综合排序
+var comSortBtn = document.querySelector("#com-sort")
+comSortBtn.addEventListener("click", function() {
+  var list = title == "" ? allJson : getListByTitle(title)
+
+  for(var i = 0; i < list.length; i++){
+    for(var j = 0; j < i; j++){
+      if(list[j].click + list[j].click < list[i].click+list[i].click) {
+        [list[j], list[i]] = [list[i], list[j]]
+      }
+    }
+  }
+  renderWebList(list, webList)
+})
+
+
+//排序方式：按点击数排序
+function sortByClick(method, list){
+  var len = list.length
+  for(var i = 0; i < len; i++){
+    for(var j = 0; j < i; j++){
+      if(method == 1 ? list[j].click < list[i].click : list[j].click > list[i].click) {
+        [list[j], list[i]] = [list[i], list[j]]
+      }
+    }
+  }
+  return list
+}
+//排序方式：按收藏数排序
+function sortByCollect(method, list){
+  var len = list.length
+  for(var i = 0; i < len; i++){
+    for(var j = 0; j < i; j++){
+      if(method == 1 ? list[j].collect < list[i].collect : list[j].collect > list[i].collect) {
+        [list[j], list[i]] = [list[i], list[j]]
+      }
+    }
+  }
+  return list
+}
+
+//升序降序按钮添加事件
+var sortBtns = document.querySelectorAll('.select-item-droplist > li')
+
+for (var i= 0; i < sortBtns.length; i++){
+  sortBtns[i].addEventListener('click', function(){
+    // console.log(this.parentNode.parentNode.querySelector(".select-item-text").innerHTML);
+    var list = title == "" ? allJson : getListByTitle(title)
+    if(this.parentNode.parentNode.querySelector(".select-item-text").innerHTML == "点击"){
+      renderWebList(sortByClick(this.value, list), webList)
+    }else{
+      renderWebList(sortByCollect(this.value, list), webList)
+    }
+  })
+}
+
 
 
