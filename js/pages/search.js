@@ -33,20 +33,18 @@ new Promise((resolve, reject) => {
       resolve(allJson)
     },
     error: function(err) {
-      console.log(13);
       fetch("/public/data/all.json")
       .then(res => res.json())
       .then(json => allJson = json)
+      .then(() => reject(err))
       
-      console.log(err);
-      reject(err)
     }
   })
 }).then(value => {
   render()
 }).catch(err => {
-  console.log(err);
   render()
+  renderWebList(allJson, webList);
 })
 
 

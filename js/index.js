@@ -139,7 +139,7 @@ function renderHotRank(json, tabbarList) {
   }
 
   for(i = 0; i < arr.length; i++) {
-    tabbar.innerHTML += `<a href="/src/pages/search.html?type=${arr[i].type}&num=${arr[i].num}"><div class="tab-item">${arr[i].title}</div></a>`
+    tabbar.innerHTML += `<a href="/pages/search.html?type=${arr[i].type}&num=${arr[i].num}"><div class="tab-item">${arr[i].title}</div></a>`
   }
   // var tabItems = document.querySelectorAll(".tab-item")
   // for(var item of tabItems) {
@@ -151,7 +151,7 @@ function renderHotRank(json, tabbarList) {
   //     })
   //   })
   // }
-  tabbar.innerHTML += '<a href="/src/pages/search.html" class="tab-more">查看更多</a>'
+  tabbar.innerHTML += '<a href="/pages/search.html" class="tab-more">查看更多</a>'
   
 }
 
