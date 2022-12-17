@@ -38,7 +38,7 @@
   float: left;
   margin: 0 12px;
   height: 24px;
-  font: 14px/24px Arial,sans-serif;
+  font: 1em/24px Arial,sans-serif;
   color: rgb(94, 94, 94);
   cursor: pointer;
   user-select: none;
@@ -99,7 +99,7 @@
 .my-title span{
   display: inline-block;
   width: 100%;
-  font-size: 14px;
+  font-size: 1em;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -162,7 +162,7 @@
   width: 100%;
   margin: 0 5px;
   border: none;
-  font-size: 14px;
+  font-size: 1em;
   background-color: #fff0;
 }
 .my-add-form input:focus {
@@ -277,7 +277,7 @@
   }
   #index-title {
     margin-top: 50px;
-    font: normal 400 30px/60px Georgia;
+    font: normal 400 2em/4em Georgia;
   }
   #indexBox {
     width: 90vw;

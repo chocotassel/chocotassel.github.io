@@ -1,4 +1,7 @@
-// import $ from "jquery"
+//username
+let userIcon = document.querySelector(".user-name")
+let username = JSON.parse(window.localStorage.getItem("user")).username
+userIcon.innerHTML = username
 
 // index recommend
 var my = document.querySelector("#my-title")
